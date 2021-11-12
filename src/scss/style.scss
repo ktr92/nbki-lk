@@ -1,0 +1,36 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import '../fonts/fonts.css';
+@import './main.css';
+@import './loginpage.scss';
+
+
+
+body {
+  min-width: 320px;
+  font-family: Formular, sans-serif;
+  @include clear;
+}
+
+* {
+  font-family: Formular, sans-serif;
+  box-sizing: border-box;
+}
+
+.onlyDesktop {
+  @include small-screen {
+    display: none;
+  }
+}
+
+.onlyMobile {
+  display: none;
+
+  @include small-screen {
+    display: block;
+  }
+}
+
+.container {
+  @include container;
+}

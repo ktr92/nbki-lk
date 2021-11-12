@@ -1,0 +1,143 @@
+.loginpage {
+  background: $bglight;
+  padding: 40px 0;
+  min-height: calc(100vh - 230px);
+
+  .centerlogo {
+    text-align: center;
+  }
+}
+
+.lkform {
+  width: 368px;
+  max-width: 100%;
+  padding: 42px 48px;
+  background: #FFFFFF;
+  border: 2px solid #E0E3F0;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.lkform .btn_main {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.loginpage__content {
+  padding: 90px 0;
+}
+
+.check-block p {
+  font-size: 10px;
+  line-height: 12px;
+  color: #7B7794;
+
+}
+
+.lkform__title {
+  margin-bottom: 36px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.lkform__input {
+  margin-bottom: 26px;
+  position: relative;
+
+}
+
+.forminput {
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.lkform__link {
+  margin-bottom: 32px;
+}
+
+.lkform__check {
+  margin-bottom: 62px;
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+  margin: 24px 0;
+}
+
+
+.lkapp {
+  border: 1px solid #AEB5D1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 33px 33px 83px 33px;
+  width: 256px;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 32px);
+  text-align: left;
+  right: unset;
+}
+
+.lkapp__code {
+  margin-bottom: 27px;
+}
+
+.lkapp__title {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.lkapp__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.loginpage__content {
+  position: relative;
+}
+
+.lkcols {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.lkform__label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  /* Красный */
+
+  color: #FF0029;
+  padding: 5px;
+  background: #fff;
+  position: absolute;
+  top: -11px;
+  left: 17px;
+}
