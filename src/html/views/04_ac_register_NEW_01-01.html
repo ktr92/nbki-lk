@@ -1,0 +1,111 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<div class="loginpage">
+  <div class="container">
+    <div class="centerlogo"><a href=""><img src="images/centerlogo.svg" alt=""></a></div>
+
+    <div class="loginpage__content">
+
+
+
+      <div class="lkcols">
+
+
+        <div class="lkform">
+          <form action="">
+            <div class="lkform__title">Регистрация</div>
+
+            <div class="lksteps">
+              <div class="lksteps__progress">
+                <div class="progressbar">
+                  <div style="width: 0%;"></div>
+                </div>
+              </div>
+              <div class="lksteps__items">
+                <div class="lksteps__step active">
+                  <div class="lksteps__title">Шаг 1</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+
+                <div class="lksteps__step">
+                  <div class="lksteps__title">Шаг 2</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+                <div class="lksteps__step">
+                  <div class="lksteps__title">Шаг 3</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+
+              </div><!-- /.lksteps__items -->
+            </div><!-- /.lksteps -->
+
+
+
+            <div class="lkform__input">
+              <input type="text" class="forminput " placeholder="Электронная почта">
+
+            </div>
+            <div class="lkform__input">
+              <input type="password" class="forminput " placeholder="Пароль">
+
+            </div>
+            <div class="lkform__input">
+              <input type="password" class="forminput " placeholder="Повторите пароль">
+
+            </div>
+
+
+            <div class="lkform__check check-block">
+              <input type="checkbox" id="checkbox_confirm">
+              <label for="checkbox_confirm"> Нажимая «Войти» я подтверждаю ознакомление с <a href=""
+                  class="link_blue">Правилами использования
+                  Личного
+                  кабинета</a> и даю свое <a href="" class="link_blue">Согласие на обработку персональных данных</a>
+              </label>
+            </div>
+            <button class="btn_main btn_main_default js-next" disabled>Далее</button>
+
+          </form>
+        </div><!-- /.lkform -->
+        <div class="text">Уже зарегистрированы? <a href="" class="link_blue">Войти</a></div>
+
+        <div class="lkapp">
+
+          <div class="appslinks onlyMobile" style="margin-top: 0;">
+            <div class="appslinks__item">
+              <a id="click2"
+                href="https://apps.apple.com/ru/app/%D0%BD%D0%B1%D0%BA%D0%B8-%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD/id1546378476"
+                target="_blank">
+                <img src="img/appstore.svg" alt="">
+              </a>
+            </div>
+            <div class="appslinks__item">
+              <a id="click3" href="https://play.google.com/store/apps/details?id=ru.nbki.app" target="_blank">
+                <img src="img/googleplay.svg" alt="">
+              </a>
+            </div>
+
+          </div>
+
+          <div class="lkapp__code onlyDesktop"><img src="img/code.png" alt=""> </div><!-- /.lkapp__code -->
+          <div class="lkapp__title">Скачайте НБКИ Онлайн</div><!-- /.lkapp__title -->
+          <div class="lkapp__text"> Мобильное приложение для круглосуточного доступа к кредитной истории и персональному
+            кредитному рейтингу</div><!-- /.lkapp__text -->
+        </div><!-- /.lkapp -->
+      </div><!-- /.lkcols -->
+
+    </div><!-- /.loginpage__content -->
+  </div><!-- /.container -->
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

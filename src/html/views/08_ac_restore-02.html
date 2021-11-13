@@ -1,0 +1,42 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<div class="loginpage">
+  <div class="container">
+    <div class="centerlogo"><a href=""><img src="images/centerlogo.svg" alt=""></a></div>
+
+    <div class="loginpage__content">
+
+
+
+      <div class="lkcols">
+
+
+
+        <div class="lkform">
+          <form action="">
+            <div class="lkform__title">Восстановление</div>
+            <div class="lkform__text">
+              Учётная запись с указанным <br> адресом электронной почты <br> не найдена. </div>
+            <div class="lkform__text">
+              <a href="" class="link_blue">Зарегистрируйтесь</a><!-- /.btn_blue -->
+            </div>
+
+
+
+
+
+          </form>
+        </div><!-- /.lkform -->
+
+
+      </div><!-- /.lkcols -->
+
+    </div><!-- /.loginpage__content -->
+  </div><!-- /.container -->
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

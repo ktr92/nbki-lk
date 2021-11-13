@@ -1,8 +1,10 @@
 @import './partials/params.scss';
 @import './partials/mixins.scss';
 @import '../fonts/fonts.css';
+@import './header.scss';
 @import './main.css';
 @import './loginpage.scss';
+@import './pages.scss';
 
 
 
@@ -15,6 +17,10 @@ body {
 * {
   font-family: Formular, sans-serif;
   box-sizing: border-box;
+}
+
+main {
+  overflow: hidden;
 }
 
 .onlyDesktop {
@@ -33,4 +39,19 @@ body {
 
 .container {
   @include container;
+}
+
+@include small-screen {
+  .mainfooter__navs_flex {
+    display: block;
+  }
+
+  .mainfooter__navs_flex>div {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer__bottom {
+    padding: 36px 0;
+  }
 }
