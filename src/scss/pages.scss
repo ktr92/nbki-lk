@@ -130,6 +130,13 @@ ul.navpages__list li.active:after {
   padding-right: 30px;
 }
 
+.card__header_green {
+  background-image: url(../img/status_green.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+}
+
 .card__header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -143,9 +150,15 @@ ul.navpages__list li.active:after {
   cursor: pointer;
 }
 
-.cardform__input>* {
+.cardform__main>* {
   display: inline-block;
   vertical-align: middle;
+}
+
+.cardform__items {}
+
+.cardform__item {
+  margin-bottom: 14px;
 }
 
 .cardform__input {
@@ -202,8 +215,9 @@ ul.navpages__list li.active:after {
   color: #7B7794;
 }
 
-.cardform__main {
+.cardform__main input {
   width: 320px;
+  max-width: 100%;
 }
 
 .cardform__buttons>* {
@@ -216,7 +230,7 @@ ul.navpages__list li.active:after {
   margin-right: 33px;
 }
 
-.cardform__input_change input {
+.cardform__input_change input:disabled {
   padding: 2px 0;
   border: 1px solid transparent;
   color: #000;
@@ -246,6 +260,10 @@ ul.navpages__list li.active:after {
   /* Черный */
 
   color: #000000;
+}
+
+.cardform__input .check-block {
+  margin-top: 10px;
 }
 
 @include medium-screen {
@@ -366,13 +384,14 @@ ul.navpages__list li.active:after {
     line-height: 12px;
   }
 
-  .card__header_red {
+  .card__header {
     padding-left: 32px;
     background-position: left top;
   }
 
   .cardform__input .check-block {
     margin-left: 0;
+
   }
 
   .cardform__buttons>* {
@@ -397,10 +416,10 @@ ul.navpages__list li.active:after {
 }
 
 .tooltiptext {
-  background: #FF0029;
+
   border-radius: 5px;
   width: 120px;
-  background-color: #FF0029;
+  background: #0A0033;
   font-size: 10px;
   line-height: 12px;
   min-width: 209px;
@@ -415,6 +434,21 @@ ul.navpages__list li.active:after {
 
 }
 
+.tooltip_header .tooltiptext {
+  padding: 10px 10px 12px 10px;
+  left: unset;
+  right: 0;
+}
+
+.tooltip_header .tooltiptext p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+.tooltip_red .tooltiptext {
+  background: #FF0029;
+}
+
 .tooltiptext p {
   margin: 0 0 10px 0;
 }
@@ -427,9 +461,158 @@ ul.navpages__list li.active:after {
   margin-left: 0px;
   border-width: 6px;
   border-style: solid;
+  border-color: transparent transparent #0A0033 transparent;
+}
+
+
+.tooltip_header .tooltiptext::after {
+
+  left: unset;
+  right: 30px;
+}
+
+.tooltip_top {
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: -63px;
+}
+
+.status {
+  position: relative;
+}
+
+.tooltip_top .tooltiptext {
+  bottom: unset;
+  top: 100%;
+  left: 0;
+  min-width: 168px;
+}
+
+.tooltip_top .tooltiptext::after {
+  bottom: unset;
+  top: 100%;
+  transform: rotate(180deg);
+  display: inline-block;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: min-content;
+  margin: auto;
+  border-width: 8px;
+}
+
+.tooltip_red .tooltiptext::after {
+
   border-color: transparent transparent #FF0029 transparent;
 }
 
 .tooltip.visible .tooltiptext {
   visibility: visible;
+}
+
+
+.lkdata {}
+
+.lkdata__card {
+  padding: 40px;
+  background: #FFFFFF;
+  /* #ECEEF6 */
+  max-width: 320px;
+  border: 2px solid #ECEEF6;
+  box-sizing: border-box;
+  border-radius: 9px;
+  margin-bottom: 18px;
+}
+
+.lkdata__content {}
+
+.lkdata__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.lkdata__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.lkdata__change {}
+
+.link_blue {}
+
+.onchange .cardform__change {
+  display: none;
+}
+
+.onchange .cardform__main input {
+  width: 320px;
+  max-width: 100%;
+}
+
+.cardform__input_change .cardform__buttons {
+  display: none;
+}
+
+.cardform__input_change.onchange .cardform__buttons {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.cardform__main {
+  position: relative;
+}
+
+.cardform__main input {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+
+}
+
+.cardform__main small.cardform__info {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  max-width: 230px;
+  /* #7B7794 */
+  display: inline-block;
+  vertical-align: middle;
+  color: #7B7794;
+  margin-left: 10px;
+}
+
+@include small-screen {
+  .cardform__main small.cardform__info {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+    max-width: 100%;
+  }
+
+  .card .link_blue {
+    text-decoration: underline;
+  }
+
+  .cardform__main>* {
+    max-width: 100%;
+  }
+
+  .lkdata__card {
+    padding: 32px;
+  }
+
+  .lkdata__item {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

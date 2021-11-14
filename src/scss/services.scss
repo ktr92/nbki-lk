@@ -1,0 +1,111 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+
+.lkgrid {}
+
+.lkgrid__items {
+  display: flex;
+  margin: 0 -16px;
+}
+
+.lkgrid__item {
+  padding: 0 16px;
+  width: 33.33333%;
+  margin-bottom: 32px;
+}
+
+.lkgrid__item .card {
+  height: 100%;
+  padding: 21px 28px 32px 28px;
+}
+
+.lkservice {
+  min-height: 205px;
+  height: 100%;
+}
+
+.lkservice__content {
+  position: relative;
+  height: 100%;
+}
+
+.lkservice__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 38px;
+}
+
+.lkservice__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.lkservice__name_small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.lkservice__image {}
+
+.lkservice__main {}
+
+.lkservice__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.lkservice__button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  >* {
+    width: 100%;
+  }
+}
+
+.btn_main.inactive {
+  border: 2px solid #AEB5D1;
+  color: #7B7794;
+}
+
+.btn_main.inactive[disabled] {
+  color: #AEB5D1;
+  border: 2px solid #ECEEF6;
+}
+
+.lkservice__button .tooltip_top {
+  top: -39px;
+}
+
+.lkservice__button .tooltip_top .tooltiptext {
+  min-width: 209px;
+  right: 0;
+  margin: auto;
+  left: 0;
+}
+
+.tooltiptext p:last-of-type {
+  margin-bottom: 0;
+}
