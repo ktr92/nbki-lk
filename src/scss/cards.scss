@@ -569,7 +569,7 @@
   }
 }
 
-.card {
+.lkpkr_type2 .card {
   padding: 32px;
 }
 
@@ -584,10 +584,34 @@
   width: 100%;
   height: 100%;
   align-items: center;
+  padding-top: 10px;
+  margin-bottom: 16px;
 
 }
 
-.serv__detail {}
+.serv__detail {
+  margin-right: 15px;
+}
+
+.serv__detail:last-of-type {
+  margin-right: 0;
+}
+
+.cards_type2 {
+  * {
+    height: initial;
+  }
+
+  .serv__img {
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .card {
+    height: initial;
+  }
+}
 
 .serv_detail1 {
   width: 224px;
@@ -644,7 +668,6 @@
 
 .serv__top {
   display: flex;
-  align-items: center;
   width: 100%;
 }
 
@@ -663,6 +686,54 @@
   right: -15px;
 }
 
+.js-toggle.active:after {
+  transform: rotate(180deg);
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content.active {
+  display: block;
+}
+
+
+.serv__hidden {
+  border-top: 1px solid #ECEEF6;
+  padding-top: 12px;
+  margin-top: 26px;
+  display: none;
+}
+
+.serv__hidden ul.navpages__list li {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  padding-bottom: 9px;
+}
+
+.lktable {
+  margin-bottom: 35px;
+
+  table {
+    width: 100%;
+  }
+
+  td {
+    padding: 12px 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7B7794;
+  }
+
+  tr:nth-child(2n) {
+    background: rgba(236, 238, 246, 0.5);
+  }
+}
 
 
 @include large-screen {
@@ -690,6 +761,38 @@
     font-size: 14px;
     white-space: nowrap !important;
   }
+
+  .lkpkr__content {
+    padding-bottom: 50px;
+  }
+
+  .cards .card {
+    padding: 16px;
+  }
+
+  .serv_detail1 {
+    width: 124px;
+  }
+
+  .serv_detail2 {
+    width: 112px;
+  }
+
+  .serv_detail3 {
+    width: 78px;
+  }
+
+  .serv_detail4 {
+    width: 56px;
+  }
+
+  .serv_detail5 {
+    width: 136px;
+  }
+
+  .serv__derailname {
+    font-size: 14px;
+  }
 }
 
 @include small-screen {
@@ -712,6 +815,35 @@
   .lkpkr__text,
   .lkpkr__link {
     display: none;
+  }
+
+  .card_lkpkr {
+    padding-bottom: 26px;
+  }
+
+  .lkpkr_type2 .lkpkr__text {
+    padding-top: 15px;
+    border-top: 1px solid #ECEEF6;
+    display: block;
+    margin-top: 29px;
+
+    * {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  .lkpkr_type2 .lkpkr__dynamic {
+    order: -1;
+  }
+
+  .lkpkr_type2.lkpkr {
+    padding-top: 70px;
+  }
+
+  .lkpkr_type2 .lkpkr__title {
+    position: absolute;
+    top: 0;
   }
 
   .lkgrid__items_two .lkgrid__item.lkgrid__item_large .card {
@@ -918,5 +1050,80 @@
 
   .lkpkr__dynamic {
     margin: auto;
+  }
+
+  .serv__details {
+    display: block;
+    padding-right: 57px;
+    position: relative;
+  }
+
+  .cards_type2 .serv__img {
+    width: 48px;
+  }
+
+  .cards_type2 .serv__main {
+    order: -1;
+  }
+
+  .cards_type2 .serv__image {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    padding-right: 0;
+  }
+
+  .serv__detail {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .serv_detail1 {
+    margin-bottom: 24px;
+  }
+
+  .serv__derailname {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 2px;
+  }
+
+  .serv__detailinfo {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .cards_type2 .serv__bottom {
+    display: block;
+  }
+
+  .serv__toggle.onlyMobile {
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+
+    a {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    .js-toggle:after {
+      content: url(../img/arrow.svg);
+      position: absolute;
+      right: -13px;
+      top: 1px;
+    }
+  }
+
+  .lktable td {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 10px;
+  }
+
+  .lktable {
+    margin-bottom: 14px;
   }
 }
