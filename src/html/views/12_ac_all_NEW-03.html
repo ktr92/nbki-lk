@@ -1,0 +1,200 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><span>Обзор</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li><a href="#">Обзор</a></li>
+        <li><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li class="active"><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+
+      <div class="card">
+        <div class="lkpkr">
+          <div class="lkpkr__content">
+            <div class="lkpkr__title">Персональный кредитный рейтинг</div>
+            <div class="lkpkr__text">
+              <p>Рейтинг оставляет не так много возможностей для привлечения кредитов</p>
+              <ul>
+                <li>В первую очередь погасите просроченные долги. Это увеличит шансы на получение кредита. Также
+                  рекомендуется проверить, нет ли ошибок в кредитной истории.
+                </li>
+                <li>Постарайтесь сократить количество займов в микрофинаносвых организациях</li>
+              </ul>
+            </div>
+
+            <div class="lkpkr__socials">
+              <div class="socials">
+                <div class="socials__items">
+                  <div class="socials__item">
+
+                    <a href="https://vk.com/public189456417">
+                      <img src="img/vk.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="socials__item">
+                    <a href="https://www.youtube.com/channel/UC-quFSK5Vpq23UOogbUcSUg" rel="nofollow" target="_blank">
+                      <img src="img/YouTube.svg" alt="">
+                    </a>
+                  </div>
+
+                  <div class="socials__item">
+                    <a href="https://www.instagram.com/nbki_official/" rel="nofollow" target="_blank">
+                      <img src="img/Instagram.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="socials__item">
+                    <a href="https://www.facebook.com/nbki.ru/" rel="nofollow" target="_blank"> <img
+                        src="img/Facebook.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="socials__item">
+                    <a href="https://ok.ru/group/57783371890929" rel="nofollow" target="_blank"> <img src="img/ok.svg"
+                        alt="">
+                    </a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div><!-- /.lkpkr__content -->
+          </div><!-- /.lkpkr__socials -->
+          <div class="lkpkr__dynamic">
+            <div class="lkpkr__score">
+              <div class="tahometerblock">
+                <div class="tahometer">
+
+                  <!-- для движения стрелки изменяем стиль style="transform: rotate(0deg);" от 0deg до  180deg -->
+                  <div class="tahometer__str"><img src="img/pkr-current.svg" alt="" style="transform: rotate(20deg);">
+                  </div>
+                </div>
+                <div class="tahometer__rating">
+                  <div class="tahometer__value">320</div>
+
+
+                </div>
+                <div class="tahometer__label">
+                  <div class="tahometer__scale tahometer__scale_start">300</div>
+                  <div class="tahometer__text">низкий</div>
+                  <div class="tahometer__scale tahometer__scale_end">850</div>
+                </div>
+                <div class="tahometer__info">
+                  Вероятность одобрения <br> нового кредита 15%
+                </div>
+
+              </div>
+            </div><!-- /.lkpkr__score -->
+            <div class="clearfix"></div>
+            <div class="tahometer__update">
+              <a href="" class="link_blue">
+                <img src="img/circle-arrow.svg" alt=""><span>обновить</span>
+              </a>
+              <div class="tahometer__time">
+                Последнее обновление: <span>19.01.2021 в 15:43</span>
+              </div>
+            </div><!-- /.tahometer__update -->
+          </div><!-- /.lkpkr__dynamic -->
+        </div><!-- /.lkpkr -->
+      </div><!-- /.card -->
+
+    </div><!-- /.container -->
+  </section>
+
+  <section class="offerscontent">
+    <div class="container">
+      <div class="navpages navpages_noborder">
+        <ul class="navpages__list">
+          <li class="active"><a href="#">Кредиты</a></li>
+          <li><a href="#">Ипотека</a></li>
+          <li><a href="#">Кредитные карты</a></li>
+          <li><a href="#">Микрозаймы</a></li>
+          <li><a href="#">Рефинансирование</a></li>
+          <li><a href="#">Автокредит</a></li>
+
+        </ul>
+      </div>
+      <div class="cards cards_type2">
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__top">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/offer4.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__details">
+                    <div class="serv__detail serv_detail1">
+                      <div class="serv__derailname">Азиатско Тихоокеанский...</div>
+                      <div class="serv__detailinfo">лиц. №705</div>
+                    </div>
+                    <div class="serv__detail serv_detail2">
+                      <div class="serv__derailname">Кредит
+                        наличными</div>
+                      <div class="serv__detailinfo">кредит наличными</div>
+                    </div>
+                    <div class="serv__detail serv_detail3">
+                      <div class="serv__derailname">до 15 млн ₽</div>
+                      <div class="serv__detailinfo">сумма</div>
+                    </div>
+                    <div class="serv__detail serv_detail4">
+                      <div class="serv__derailname">от 5,5%</div>
+                      <div class="serv__detailinfo">ставка</div>
+                    </div>
+                    <div class="serv__detail serv_detail5">
+                      <div class="serv__derailname">от 24 мес.</div>
+                      <div class="serv__detailinfo">срок</div>
+                    </div>
+                  </div><!-- /.serv__details -->
+                  <div class="serv__bottom">
+                    <div class="serv__toggle">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                    <div class="serv__button">
+                      <a href="" class="btn_main">Подать заявку</a>
+                    </div><!-- /.serv__button -->
+                  </div>
+
+                </div><!-- /.serv__main -->
+
+
+              </div>
+
+
+            </div><!-- /.serv__content -->
+
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+
+
+
+      </div><!-- /.cards -->
+
+    </div><!-- /.container -->
+  </section>
+
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
