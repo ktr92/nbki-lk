@@ -1070,8 +1070,174 @@ section>.container>h1 {
   }
 }
 
+.text-big {
+  max-width: 732px;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.pkrnav {
+  padding: 30px 0;
+}
+
+.pkrnav__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+.pkrnav__item:hover svg path {
+  fill: $blue;
+  stroke: $blue;
+}
+
+.pkrnav__item.active svg path {
+  fill: $blue;
+  stroke: $blue;
+}
+
+.pkrnav__item:hover svg rect {
+  stroke: $blue;
+}
+
+.pkrnav__item.active svg rect {
+  stroke: $blue;
+}
+
+.smalltext {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  display: block;
+  /* #7B7794 */
+
+  color: #7B7794;
+  margin: 30px 0 10px 0;
+  max-width: 732px;
+}
+
+.lktable__small {
+  width: 110px;
+}
+
+.lktable_buy {
+  min-height: 270px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.lkbuy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.lkbuy__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lkbuy__promo {}
+
+.lkbuy__input {
+  input {
+    margin-bottom: 0;
+    width: 215px;
+  }
+}
+
+.lkbuy__apply {
+  margin-left: 16px;
+}
+
+.link_blue {}
+
+.lkbuy__buy {}
+
+.lkbuy__flex {
+  display: flex;
+  align-items: center;
+}
+
+.lkbuy__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+
+  /* #7B7794 */
+
+  color: #7B7794;
+  min-height: 12px;
+}
+
+.lkbuy__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.lkbuy__price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+  white-space: nowrap;
+  color: #000000;
+  margin-right: 31px;
+}
+
+.lkbuy__confirm {}
+
+.btn_main {}
+
+.btn_main_default {}
+
+.lkbuy__cancel {
+  width: 160px;
+  margin-left: 32px;
+
+  .btn_main {
+    max-width: 100%;
+    min-width: initial;
+    width: 100%;
+  }
+}
+
+.lktable_buy {
+  tr th:first-child {
+    padding-left: 0;
+    width: 290px;
+  }
+
+  tr td:first-child {
+    width: 290px;
+  }
+
+  th {
+    color: #7B7794;
+  }
+}
+
+.btn_main_white {}
+
+
 
 @include large-screen {
+
+  .lkbuy__price {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
   .lkgrid__items_two .lkgrid__item.lkgrid__item_small {
     width: 300px;
   }
@@ -1082,6 +1248,14 @@ section>.container>h1 {
 }
 
 @include medium-screen {
+
+  .lkbuy__wrapper {
+    display: block;
+  }
+
+  .lkbuy__promo {
+    margin-bottom: 16px;
+  }
 
   .lktable_type2 {
 
@@ -1665,4 +1839,111 @@ section>.container>h1 {
     padding: 0 !important;
   }
 
+  .card {
+    padding-bottom: 16px;
+  }
+
+  td .onlyMobile span {
+    display: block;
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+
+    /* #AEB5D1 */
+
+    color: #AEB5D1;
+
+  }
+
+  .lktable_type3 td span.lktable__tdlarge {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+
+  .lktable_buy {
+    tr th:first-child {
+      padding-left: 0;
+      width: initial;
+    }
+
+    tr td:first-child {
+      width: initial;
+    }
+
+    td span.lktable__tdlarge {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .lkbuy__wrapper {
+    display: block;
+  }
+
+  .lkbuy__buttons {
+    flex-wrap: wrap;
+
+    >* {
+      width: 100%;
+      margin: 0;
+    }
+
+    .btn_main_default {
+      width: 100%;
+    }
+  }
+
+  .lkbuy__cancel {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  .lkbuy__promo {
+    margin-bottom: 16px;
+  }
+
+  .card h1 {
+    margin-top: 0;
+  }
+
+  .card_buy {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  .lkbuy {
+    position: initial;
+    margin-top: 44px;
+  }
+
+  .lktable_buy {
+    padding-bottom: 0;
+    min-height: initial;
+  }
+
+  .btn_main .onlyMobile {
+    display: inline-block;
+    padding-left: 0;
+  }
+
+  .container_padding {
+    padding-bottom: 40px;
+  }
+
+  .lkbuy__input input {
+    width: 170px;
+  }
 }

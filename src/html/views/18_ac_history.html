@@ -31,15 +31,14 @@
 
   <section>
     <div class="container">
-      <div class="card">
+      <div class="card ">
         <h1>История заказов
         </h1>
-        <!-- эту таблицу надо выводить 2 раза - для десктопа и мобильной, т.к. дизайн не позволяет совместить это в одной сущности -->
-        <!-- десктоп версия -->
-        <div class="lktable lktable_type3 onlyDesktop">
+
+        <div class="lktable lktable_type3">
 
           <table cellspacing="0">
-            <thead>
+            <thead class="onlyDesktop">
               <tr>
                 <th>
                   <a href="#">
@@ -82,10 +81,10 @@
             </thead>
             <tbody>
               <tr>
-                <td>
+                <td class="onlyDesktop">
                   <span>15.07.2021</span>
                 </td>
-                <td>
+                <td class="onlyDesktop">
                   <span>17:40</span>
                 </td>
                 <td>
@@ -93,21 +92,25 @@
                     ПКР
                   </span>
                 </td>
-                <td>
+                <td class="onlyDesktop">
                   <span>Получен</span>
                 </td>
-                <td>
+                <td class="onlyDesktop">
                   <span>Бесплатно</span>
                 </td>
                 <td>
+                  <span class="onlyMobile">
+                    <span>11.01.2021 22:30</span>
+                    <span>Бесплатно / Успешно</span>
+                  </span><!-- /.onlyMobile -->
                   <span class="lktable__tdlarge">325 баллов</span>
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="onlyDesktop">
                   <span>15.07.2021</span>
                 </td>
-                <td>
+                <td class="onlyDesktop">
                   <span>17:40</span>
                 </td>
                 <td>
@@ -115,23 +118,27 @@
                     ПКР 12
                   </span>
                 </td>
-                <td>
+                <td class="onlyDesktop">
                   <span>Получен</span>
                 </td>
-                <td>
+                <td class="onlyDesktop">
                   <span>Бесплатно</span>
                 </td>
                 <td>
+                  <span class="onlyMobile">
+                    <span>11.01.2021 22:30</span>
+                    <span>Бесплатно / Успешно</span>
+                  </span><!-- /.onlyMobile -->
                   <span class="lktable__tdlarge">
                     <a href="" class="link_blue">Посмотреть отчет</a>
                   </span>
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="onlyDesktop">
                   <span>15.07.2021</span>
                 </td>
-                <td>
+                <td class="onlyDesktop">
                   <span>17:40</span>
                 </td>
                 <td>
@@ -139,13 +146,17 @@
                     Кредитная история
                   </span>
                 </td>
-                <td>
+                <td class="onlyDesktop">
                   <span>Получен</span>
                 </td>
-                <td>
+                <td class="onlyDesktop">
                   <span>Бесплатно</span>
                 </td>
                 <td>
+                  <span class="onlyMobile">
+                    <span>11.01.2021 22:30</span>
+                    <span>Бесплатно / Успешно</span>
+                  </span><!-- /.onlyMobile -->
                   <span class="lktable__tdlarge">
                     <a href="" class="link_blue">Скачать отчет / Скачать отчет с ЭЦП</a>
                   </span>
