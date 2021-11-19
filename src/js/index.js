@@ -27,6 +27,12 @@ $(document).ready(function () {
     $(this).toggleClass('active')
   });
 
+  /* $('.lkgrid_wrap .lkgrid__items').each(function () {
+    const items = $(this).find('.lkgrid__item')
+    console.log(items)
+    $(this).css('height', items[0].outerHeight() + items[1].outerHeight())
+  }) */
+
 
   /* $("input[name=date]").mask("99.99.9999");
    */

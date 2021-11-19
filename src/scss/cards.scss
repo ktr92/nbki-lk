@@ -735,6 +735,341 @@
   }
 }
 
+.getserv {
+  width: 255px;
+  position: relative;
+  height: 100%;
+}
+
+.getserv__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+  /* Черный */
+
+  color: #000000;
+}
+
+.getserv__buttons {
+  position: absolute;
+  bottom: 0;
+}
+
+.lktable th {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: left;
+  padding: 12px 16px;
+  /* Черный */
+
+  color: #000000;
+}
+
+.getserv__info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 6px;
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.dflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lkpkr__left {
+  max-width: 571px;
+
+  .lkpkr__title {
+    margin-bottom: 20px;
+  }
+}
+
+.round {
+
+  box-sizing: border-box;
+  width: 29px;
+  height: 29px;
+  display: block;
+  border-radius: 50%;
+
+}
+
+.round_blue {
+  border: 2px solid #4563FF;
+  background: #4563FF;
+}
+
+
+.round_red {
+  border: 2px solid $red;
+  background: $red;
+}
+
+
+.round_border {
+  background: none;
+}
+
+.lkservice__icon {
+  margin-bottom: 15px;
+}
+
+.lkservice__text_small {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #7B7794;
+}
+
+.lkservice.lkservice_small {
+  min-height: initial;
+}
+
+.lkgrid__item .card {
+  margin-bottom: 0;
+  padding-right: 17px;
+}
+
+.lkservice__name {
+  margin-bottom: 10px;
+}
+
+.servicecard__title_sm {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.servicecard_link {
+  border: 1px solid #AEB5D1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 42px 0 32px;
+}
+
+.servicecard_link .servicecard__title_sm {
+  padding-left: 10px;
+  padding-bottom: 0;
+}
+
+.servicecard_link .servicecard__title_sm {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.servicecard__title_sm span,
+.servicecard__title_sm a {
+  display: block;
+}
+
+.servicecard__title_sm span {
+  margin-bottom: 8px;
+}
+
+
+.servicecard_large {
+  display: block;
+}
+
+.servicecard_large .servicecard__icon_sm {
+  margin-bottom: 26px;
+}
+
+.servicecard_large .servicecard__title_sm {
+  padding-left: 0;
+}
+
+.servicecard_large {
+  padding: 32px 32px 28px 32px;
+}
+
+
+
+.card_lkpkr_default {
+  padding: 32px;
+}
+
+.getserv__img {
+  text-align: center;
+}
+
+.card_default .lkservice {
+  min-height: initial;
+}
+
+.card_default,
+.lkgrid__item .card.card_default {
+  padding: 32px;
+}
+
+.lkservice_short {
+  .lkservice__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .lkservice__icon {
+    margin-bottom: 0;
+  }
+
+  .lkservice__name {
+    margin-bottom: 0;
+  }
+
+
+  .lkservice__icon {
+    margin-right: 32px;
+  }
+}
+
+.lkservice__name_extrasmall {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.smallinfo {
+  max-width: 430px;
+  /* background-image: url(../img/attention.svg);
+  background-position: left top;
+  background-repeat: no-repeat; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  /*   padding-left: 34px; */
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.smallinfo {
+  display: flex;
+  align-items: center;
+
+  span {
+    padding-left: 11px;
+  }
+}
+
+.lktable_large td {
+  padding-bottom: 32px;
+}
+
+.lktable_large tr td:first-child {
+  min-width: 400px;
+}
+
+.lktable td {
+  vertical-align: baseline;
+}
+
+.card>.lktable {
+  margin-bottom: 0;
+}
+
+.lktable__tdlarge {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+section>.container>h1 {
+  margin-top: 50px;
+}
+
+.lktable_type3 {
+  thead tr {
+    background: #fff !important;
+  }
+
+  th {
+    padding-left: 11px;
+    padding-bottom: 14px;
+  }
+
+  tr:nth-child(2n-1) {
+    background: #F6F7FB;
+
+
+  }
+
+  tr:nth-child(2n) {
+    background: #fff;
+
+  }
+
+  td {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #7B7794;
+    padding: 10px 16px 14px 11px;
+    min-width: 100px;
+
+    span {
+      padding: 0;
+      line-height: 1;
+    }
+
+    span.lktable__tdlarge {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+  }
+}
+
+.lktable_type2 {
+
+  tr {
+    td:last-child {
+      padding-right: 127px;
+    }
+  }
+
+
+  th {
+    padding-bottom: 27px;
+  }
+
+  td {
+    padding: 16px 16px 32px 16px;
+  }
+
+  tr:nth-child(2n-1) {
+    background: #F6F7FB;
+
+
+  }
+
+  tr:nth-child(2n) {
+    background: #fff;
+
+    td {
+      padding: 6px 0;
+    }
+  }
+
+  thead tr {
+    background: #fff !important;
+  }
+}
+
 
 @include large-screen {
   .lkgrid__items_two .lkgrid__item.lkgrid__item_small {
@@ -747,6 +1082,21 @@
 }
 
 @include medium-screen {
+
+  .lktable_type2 {
+
+    tr {
+      td:last-child {
+        padding-right: 16px;
+      }
+    }
+
+  }
+
+  .lktable_large tr td:first-child {
+    min-width: initial;
+  }
+
   .lkgrid__items_two .lkgrid__item.lkgrid__item_small {
     width: 100%;
   }
@@ -1126,4 +1476,193 @@
   .lktable {
     margin-bottom: 14px;
   }
+
+  .card_lkpkr_default {
+    width: 100%;
+    margin: 0;
+    padding: 18px 16px;
+
+  }
+
+  .card_default {
+    margin: 0;
+
+
+
+  }
+
+  .lkpkr_type3 {
+    padding-bottom: 0;
+
+    .lkpkr__content {
+      padding-bottom: 13px;
+    }
+
+
+
+    .getserv__text {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 21px;
+    }
+
+    .lkpkr__text {
+      display: block;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+
+      /* #7B7794 */
+
+      color: #7B7794;
+    }
+
+    .lkpkr__title {
+      font-size: 22px;
+      line-height: 27px;
+      text-align: left;
+      margin-bottom: 13px;
+    }
+  }
+
+  .getserv__buttons {
+    position: initial;
+  }
+
+  a.linksmall {
+    text-decoration: underline;
+  }
+
+  .servicecard_large .servicecard__title_sm a,
+  .servicecard_large .servicecard__title_sm span {
+    font-size: 14px;
+    line-height: 17px;
+
+
+  }
+
+  .servicecard_large {
+    padding-right: 18px;
+  }
+
+  .lkgrid_type32 {
+    .lkgrid__item {
+      width: 50%;
+      padding: 0 8px;
+      margin-bottom: 16px;
+    }
+
+    .lkservice__name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .lkservice__content {
+      padding-bottom: 0;
+    }
+
+    .lkservice__text_small {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    .lkservice__icon {
+      margin-bottom: 7px;
+    }
+
+    .lkservice__name {
+      margin-bottom: 7px;
+    }
+
+    .lkgrid__item_mfull {
+      width: 100%;
+    }
+
+    .lkgrid__items {
+      margin: 0 -8px;
+    }
+
+    .card {
+      width: 100%;
+    }
+
+    .servicecard_link .servicecard__icon_small {
+      display: block;
+    }
+  }
+
+  .lkservice_short {
+    .lkservice__content {
+      display: block;
+
+    }
+
+    .lkservice__icon {
+      margin-bottom: 7px;
+    }
+
+    .lkservice__name {
+      margin-bottom: 0;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+
+    .lkservice__icon {
+      margin-right: 0;
+    }
+  }
+
+  .card_default,
+  .lkgrid__item .card.card_default {
+    padding: 16px;
+  }
+
+  /*   .lkgrid__items_wrap {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 50%;
+  } */
+
+  .lkgrid_wrap {
+    .lkgrid__items {
+      /*   height: 250px; */
+      flex: 1 1 50%;
+      /*       flex-flow: column wrap;
+      flex-wrap: wrap; */
+
+      /* .lkgrid__item:last-child {
+        .card {
+          padding-bottom: 50px;
+        }
+
+      } */
+    }
+
+  }
+
+  .lkgrid_type32 .card {
+    height: initial;
+  }
+
+  .getserv.onlyMobile {
+    margin-bottom: 34px;
+  }
+
+  .lkpkr_type3 .lkpkr__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .lkpkr__title_mleft {
+    text-align: left !important;
+    padding: 0 !important;
+  }
+
 }

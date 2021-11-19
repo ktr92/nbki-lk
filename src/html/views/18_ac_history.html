@@ -1,0 +1,166 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><a href=""><span>Услуги</span></a></li>
+        <li><span>Кредитная история</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li><a href="#">Обзор</a></li>
+        <li class="active"><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li class="active"><a href="#">История заказов</a></li>
+        <li><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <section>
+    <div class="container">
+      <div class="card">
+        <h1>История заказов
+        </h1>
+        <!-- эту таблицу надо выводить 2 раза - для десктопа и мобильной, т.к. дизайн не позволяет совместить это в одной сущности -->
+        <!-- десктоп версия -->
+        <div class="lktable lktable_type3 onlyDesktop">
+
+          <table cellspacing="0">
+            <thead>
+              <tr>
+                <th>
+                  <a href="#">
+                    <span>Дата</span>
+                    <img src="img/arrowTable.svg" alt="">
+                  </a>
+                </th>
+
+                <th>
+                  <a href="#">
+                    <span>Время</span>
+                    <img src="img/arrowTable.svg" alt="">
+                  </a>
+                </th>
+
+                <th>
+                  <a href="#">
+                    <span>Услуга</span>
+                    <img src="img/arrowTable.svg" alt="">
+                  </a>
+                </th>
+
+                <th>
+                  <a href="#">
+                    <span>Статус</span>
+                    <img src="img/arrowTable.svg" alt="">
+                  </a>
+                </th>
+
+                <th>
+                  <a href="#">
+                    <span>Стоимость</span>
+                    <img src="img/arrowTable.svg" alt="">
+                  </a>
+                </th>
+
+                <th>Результат</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span>15.07.2021</span>
+                </td>
+                <td>
+                  <span>17:40</span>
+                </td>
+                <td>
+                  <span class="lktable__tdlarge">
+                    ПКР
+                  </span>
+                </td>
+                <td>
+                  <span>Получен</span>
+                </td>
+                <td>
+                  <span>Бесплатно</span>
+                </td>
+                <td>
+                  <span class="lktable__tdlarge">325 баллов</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>15.07.2021</span>
+                </td>
+                <td>
+                  <span>17:40</span>
+                </td>
+                <td>
+                  <span class="lktable__tdlarge">
+                    ПКР 12
+                  </span>
+                </td>
+                <td>
+                  <span>Получен</span>
+                </td>
+                <td>
+                  <span>Бесплатно</span>
+                </td>
+                <td>
+                  <span class="lktable__tdlarge">
+                    <a href="" class="link_blue">Посмотреть отчет</a>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>15.07.2021</span>
+                </td>
+                <td>
+                  <span>17:40</span>
+                </td>
+                <td>
+                  <span class="lktable__tdlarge">
+                    Кредитная история
+                  </span>
+                </td>
+                <td>
+                  <span>Получен</span>
+                </td>
+                <td>
+                  <span>Бесплатно</span>
+                </td>
+                <td>
+                  <span class="lktable__tdlarge">
+                    <a href="" class="link_blue">Скачать отчет / Скачать отчет с ЭЦП</a>
+                  </span>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div><!-- /.card -->
+    </div><!-- /.container -->
+  </section>
+
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
