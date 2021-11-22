@@ -588,7 +588,125 @@ ul.navpages__list li.active:after {
   margin-left: 10px;
 }
 
+.modal-backdrop {
+  background-color: rgba(10, 0, 51, 0.6);
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.lktable.lktable_modal {
+  margin-bottom: 0;
+}
+
+.lktable.lktable_modal td {
+  padding-bottom: 32px;
+}
+
+.modal-content {
+  padding: 32px;
+}
+
+.modal-header {
+  padding: 0;
+  border-bottom: none;
+}
+
+.modal-header h4 {
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.lktable_modal tr:nth-child(2n-1) {
+  background: rgba(236, 238, 246, .5);
+}
+
+.lktable_modal tr:nth-child(2n) {
+  background: #fff !important;
+}
+
+.modal__img {
+  padding: 55px 0;
+  text-align: center;
+}
+
+.modal__bodytitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.modal__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #000000;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content {
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__textbig {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  max-width: 255px;
+  margin: auto;
+}
+
+
 @include small-screen {
+  .modal-content {
+    padding: 8px;
+
+  }
+
+  .modal-dialog {
+    max-width: 95% !important;
+    width: initial !important;
+    margin: 15px auto;
+  }
+
+  .modalclose {
+    top: 15px;
+    right: 15px;
+  }
+
   .cardform__main small.cardform__info {
     width: 100%;
     margin-left: 0;

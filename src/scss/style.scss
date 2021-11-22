@@ -42,6 +42,11 @@ main {
   @include container;
 }
 
+table tbody tr {
+  border: none;
+}
+
+
 @include small-screen {
   .mainfooter__navs_flex {
     display: block;

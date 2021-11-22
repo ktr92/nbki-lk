@@ -3443,28 +3443,20 @@ svg#pathCircle {
 
 .fade {}
 
-.modal-dialog {
-	width: 368px;
-	max-width: 94%;
-}
-
-.modal-content {
-	padding: 45px 46px;
-}
 
 .modal-header {}
 
 .modalclose {
 	position: absolute;
-	top: 15px;
-	right: 15px;
+	top: 30px;
+	right: 32px;
 	z-index: 1;
-	opacity: 0.5;
+	opacity: 1;
 	cursor: pointer;
 }
 
 .modalclose:hover {
-	opacity: 1;
+	opacity: 0.5;
 }
 
 .modal-body {}
@@ -3695,6 +3687,7 @@ svg#pathCircle {
 	margin-bottom: 32px;
 }
 
+/* 
 table tbody tr {
 	border-top: 1px solid #AEB5D1;
 }
@@ -3707,7 +3700,7 @@ table tbody tr td>span {
 	display: block;
 	padding: 23px;
 }
-
+ */
 .tableblock_2col table tbody tr td {
 	font-style: normal;
 	font-weight: normal;

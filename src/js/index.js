@@ -1,5 +1,5 @@
 import './maskedinput.min.js'
-
+import './bootstrap.min.js'
 
 
 $(document).ready(function () {
