@@ -228,12 +228,17 @@ ul.navpages__list li.active:after {
   margin-right: 33px;
 }
 
-.cardform__input_change input:disabled {
+.cardform__input_change input:disabled,
+.cardform__input_change .disabled {
   padding: 2px 0;
   border: 1px solid transparent;
   color: #000;
   width: initial;
 
+}
+
+.cardform__input_change .cardform__main span {
+  padding-right: 10px;
 }
 
 .cardform__input_change .cardform__main {
@@ -242,6 +247,10 @@ ul.navpages__list li.active:after {
 
 .cardform__change {
   margin-top: 10px;
+}
+
+.cardform__change_date {
+  margin-top: 0;
 }
 
 .cardform__check_small .check-block {
@@ -382,7 +391,8 @@ ul.navpages__list li.active:after {
     line-height: 12px;
   }
 
-  .card__header {
+  .card__header_red,
+  .card__header_green {
     padding-left: 32px;
     background-position: left top;
   }
@@ -510,6 +520,25 @@ ul.navpages__list li.active:after {
   visibility: visible;
 }
 
+.card__header {
+  position: relative;
+}
+
+@media(min-width: 767px) {
+  .card__header_red .tooltip {
+    position: absolute;
+    width: initial;
+    top: 40px;
+    right: 0;
+    transform: translateX(-85px);
+  }
+
+  .card__header_red .tooltip .tooltiptext:after {
+    left: calc(50% - 5px);
+  }
+
+}
+
 
 .lkdata {}
 
@@ -554,6 +583,8 @@ ul.navpages__list li.active:after {
   max-width: 100%;
 }
 
+.cardform__input_change {}
+
 .cardform__input_change .cardform__buttons {
   display: none;
 }
@@ -566,6 +597,17 @@ ul.navpages__list li.active:after {
 
 .cardform__main {
   position: relative;
+
+}
+
+.cardform__input_change .cardform__main {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cardform__input_change .cardform__change {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .cardform__main input {
@@ -692,6 +734,16 @@ ul.navpages__list li.active:after {
 
 
 @include small-screen {
+  .card__header_green .tooltip_top {
+    left: -32px;
+    top: -78px;
+  }
+
+  .card__header_green .tooltip_top .tooltiptext:after {
+    right: unset;
+    left: 5px;
+  }
+
   .modal-content {
     padding: 8px;
 

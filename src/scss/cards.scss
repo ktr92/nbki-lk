@@ -313,6 +313,7 @@
 .offer {
   position: relative;
   height: 100%;
+  padding-bottom: 50px;
 }
 
 .offer__header {
@@ -593,7 +594,7 @@
   margin-right: 15px;
 }
 
-.serv__detail:last-of-type {
+.serv__detail.serv_detail5 {
   margin-right: 0;
 }
 
@@ -642,7 +643,6 @@
   line-height: 20px;
   /* identical to box height */
   margin-bottom: 4px;
-
   color: #000000;
 }
 
@@ -1945,5 +1945,9 @@ section>.container>h1 {
 
   .lkbuy__input input {
     width: 170px;
+  }
+
+  .offer {
+    padding-bottom: 0;
   }
 }

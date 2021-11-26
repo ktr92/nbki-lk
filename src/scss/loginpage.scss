@@ -25,6 +25,7 @@
       padding: 0 0 24px 0;
       background-color: #fff;
       margin-bottom: 32px;
+      margin-bottom: 0;
 
       a {}
     }
@@ -160,6 +161,12 @@
   left: calc(100% + 32px);
   text-align: left;
   right: unset;
+
+  @include medium-screen {
+    position: initial;
+    width: 368px;
+    padding-bottom: 33px;
+  }
 
   @include small-screen {
     position: initial;
