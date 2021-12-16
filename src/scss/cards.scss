@@ -352,7 +352,6 @@
   border-radius: 50%;
   overflow: hidden;
   margin-top: -8px;
-  margin-right: -16px;
 }
 
 .offer__logo {}
@@ -736,7 +735,7 @@
 }
 
 .getserv {
-  width: 255px;
+  width: 300px;
   position: relative;
   height: 100%;
 }
@@ -780,13 +779,20 @@
   color: #7B7794;
 }
 
+.getserv__button_score .btn_main.btn_main_default {
+  width: 288px;
+  max-width: 288px;
+  display: block;
+  margin: auto;
+}
+
 .dflex {
   display: flex;
   justify-content: space-between;
 }
 
 .lkpkr__left {
-  max-width: 571px;
+  max-width: 549px;
 
   .lkpkr__title {
     margin-bottom: 20px;
@@ -1230,6 +1236,29 @@ section>.container>h1 {
 .btn_main_white {}
 
 
+.lkpkr__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  /* Темно-синий */
+
+  color: #0A0033;
+}
+
+.lkpkr__content {
+  padding-bottom: 32px;
+}
+
+.lkpkr__text_medium p {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.defaultcol_2col {
+  padding-bottom: 5px;
+}
 
 @include large-screen {
 

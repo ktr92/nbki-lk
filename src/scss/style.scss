@@ -8,6 +8,7 @@
 @import './services.scss';
 @import './cards.scss';
 @import './graphs.scss';
+@import './charts.scss';
 
 body {
   min-width: 320px;
@@ -100,6 +101,13 @@ section>.container>h2 {
   padding-top: 16px;
 }
 
+.lkpkr__text {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .card__header_red .tooltip {
     position: absolute;
@@ -136,6 +144,8 @@ section>.container>h2 {
     height: initial;
     justify-content: center;
   }
+
+
 }
 
 @include large-screen {}
@@ -196,8 +206,19 @@ section>.container>h2 {
 }
 
 @include small-screen {
+  .lkprk__right {
+    width: 100%;
+  }
 
+  .getserv {
+    width: 320px;
+    max-width: 100%;
+    margin: auto;
+  }
 
+  .getserv .btn_main_default {
+    width: 100%;
+  }
 
 
   .lkgrid_type32 .lkgrid__item {

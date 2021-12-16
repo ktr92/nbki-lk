@@ -12,6 +12,7 @@
   "dependencies": {
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.1.2",
+    "chart.js": "^3.6.2",
     "jquery": "^3.6.0",
     "lightbox2": "^2.11.3"
   },

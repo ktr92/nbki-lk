@@ -183,3 +183,109 @@ $(document).ready(function () {
 
   });
 })(jQuery);
+
+
+$(function() {
+
+  var rawData = 77,
+    data = getData(rawData);
+
+  function getData(rawData) {
+    var data = [],
+      start = Math.round(Math.floor(rawData / 10) * 10);
+    data.push(rawData);
+    for (let i = start; i > 0; i -= 1) {
+      data.push({
+        y: i
+      });
+    }
+    return data;
+  }
+
+  Highcharts.chart('container', {
+    chart: {
+      type: 'solidgauge',
+      marginTop: 10
+    },
+    
+    title: {
+      text: ''
+    },
+    
+    subtitle: {
+      text: rawData,
+      style: {
+        'font-size': '60px'
+      },
+      y: 200,
+      zIndex: 7
+    },
+
+    tooltip: {
+      enabled: false
+    },
+
+    pane: [{
+      startAngle: -120,
+      endAngle: 120,
+      background: [{ // Track for Move
+        outerRadius: '100%',
+        innerRadius: '80%',
+        backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),
+        borderWidth: 0,
+        shape: 'arc'
+      }],
+      size: '120%',
+      center: ['50%', '65%']
+    }, {
+      startAngle: -120,
+      endAngle: 120,
+      size: '95%',
+      center: ['50%', '65%'],
+      background: []
+    }],
+
+    yAxis: [{
+      min: 0,
+      max: 100,
+      lineWidth: 2,
+      lineColor: 'white',
+      tickInterval: 4,
+      labels: {
+        enabled: false
+      },
+      minorTickWidth: 0,
+      tickLength: 50,
+      tickWidth: 0,
+      tickColor: 'white',
+      zIndex: 6,
+      stops: [
+        [0, '#FF0029'],
+        [0.301, '#FAF354'],
+        [0.601, '#6BFA54'],
+        [1, '#56C048'],
+        
+        
+      ]
+    }, {
+      linkedTo: 0,
+      pane: 1,
+      lineWidth: 5,
+      lineColor: 'white',
+      tickPositions: [],
+      zIndex: 6
+    }],
+    
+    series: [{
+      animation: false,
+      dataLabels: {
+        enabled: false
+      },
+      borderWidth: 0,
+      color: Highcharts.getOptions().colors[0],
+      radius: '100%',
+      innerRadius: '80%',
+      data: data
+    }]
+  });
+});
