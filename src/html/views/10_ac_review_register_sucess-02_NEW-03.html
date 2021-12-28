@@ -30,11 +30,6 @@
   <section>
     <div class="container">
 
-      <div id="container" style="height: 300px;">
-      </div>
-      
-
-
       <div class="lkgrid">
         <div class="lkgrid__items lkgrid__items_two">
           <div class="lkgrid__item lkgrid__item_small">
@@ -101,7 +96,7 @@
                 </div><!-- /.lkpkr__static -->
                 <div class="lkpkr__dynamic">
                   <div class="lkpkr__score">
-                   <!--  <div class="tahometerblock">
+                    <!--  <div class="tahometerblock">
                       <div class="tahometer">
 
                       
@@ -124,9 +119,61 @@
 
                     </div> -->
                     <div class="tahometerblock">
-                      
-                      
-                     
+                      <span class="white1"></span>
+                      <span class="white2"></span>
+
+                      <div id="taho-container">
+                        <div id="taho-chartContainer">
+                          <div class="canvasjs-chart-container"
+                            style="position: relative; text-align: left; cursor: auto; direction: ltr;"><canvas
+                              class="canvasjs-chart-canvas" width="800" height="600"
+                              style="width: 400px; height: 300px; position: absolute; user-select: none;"></canvas><canvas
+                              class="canvasjs-chart-canvas" width="800" height="600"
+                              style="width: 400px; height: 300px; position: absolute; -webkit-tap-highlight-color: transparent; user-select: none;"></canvas>
+                            <div class="canvasjs-chart-toolbar"
+                              style="position: absolute; right: 1px; top: 1px; border: 1px solid transparent;"></div>
+                            <div class="canvasjs-chart-tooltip"
+                              style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 2px; z-index: 1000; pointer-events: none; display: none; border-radius: 5px;">
+                              <div
+                                style=" width: auto;height: auto;min-width: 50px;line-height: auto;margin: 0px 0px 0px 0px;padding: 5px;font-family: Calibri, Arial, Georgia, serif;font-weight: normal;font-style: italic;font-size: 14px;color: #000000;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);text-align: left;border: 2px solid gray;background: rgba(255,255,255,.9);text-indent: 0px;white-space: nowrap;border-radius: 5px;-moz-user-select:none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;} ">
+                                Sample Tooltip</div>
+                            </div><a class="canvasjs-chart-credit" title="JavaScript Charts"
+                              style="outline:none;margin:0px;position:absolute;right:2px;top:286px;color:dimgrey;text-decoration:none;font-size:11px;font-family: Calibri, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif"
+                              tabindex="-1" target="_blank" href="https://canvasjs.com/">CanvasJS.com</a>
+                          </div>
+                        </div>
+                        <div id="taho-overlay-chart-two">
+                          <div class="canvasjs-chart-container"
+                            style="position: relative; text-align: left; cursor: auto; direction: ltr;"><canvas
+                              class="canvasjs-chart-canvas" width="520" height="520"
+                              style="width: 260px; height: 260px; position: absolute; user-select: none;"></canvas><canvas
+                              class="canvasjs-chart-canvas" width="520" height="520"
+                              style="width: 260px; height: 260px; position: absolute; -webkit-tap-highlight-color: transparent; user-select: none;"></canvas>
+                            <div class="canvasjs-chart-toolbar"
+                              style="position: absolute; right: 1px; top: 1px; border: 1px solid transparent;"></div>
+                            <div class="canvasjs-chart-tooltip"
+                              style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 2px; z-index: 1000; pointer-events: none; display: none; border-radius: 5px;">
+                              <div
+                                style=" width: auto;height: auto;min-width: 50px;line-height: auto;margin: 0px 0px 0px 0px;padding: 5px;font-family: Calibri, Arial, Georgia, serif;font-weight: normal;font-style: italic;font-size: 14px;color: #000000;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);text-align: left;border: 2px solid gray;background: rgba(255,255,255,.9);text-indent: 0px;white-space: nowrap;border-radius: 5px;-moz-user-select:none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;} ">
+                                Sample Tooltip</div>
+                            </div><a class="canvasjs-chart-credit" title="JavaScript Charts"
+                              style="outline:none;margin:0px;position:absolute;right:2px;top:246px;color:dimgrey;text-decoration:none;font-size:11px;font-family: Calibri, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif"
+                              tabindex="-1" target="_blank" href="https://canvasjs.com/">CanvasJS.com</a>
+                          </div>
+                        </div>
+                        <div id="taho-overlay">
+                          <div class="taho-overlay-onchart-digit" style="top:240px; left:49px;">1</div>
+                          <div class="taho-overlay-onchart-digit" style="top:135px; left: -4px;">179</div>
+                          <div class="taho-overlay-onchart-digit" style="top: 27px;left: 216px;">623</div>
+                          <div class="taho-overlay-onchart-digit" style="    top: 195px; left: 272px;">912</div>
+                          <div class="taho-overlay-onchart-digit" style="top: 241px;left: 242px;">999</div>
+                          <div id="taho-overlay-main-digit">100</div>
+                          <div id="taho-overlay-description">МИНИМУМ <img src="images/attention.svg" alt=""></div>
+                        </div>
+                      </div>
+                      <input id="tahometerval" name="tahometerval" value="320" style="display:none;">
+
+
 
                     </div>
                   </div><!-- /.lkpkr__score -->
@@ -136,7 +183,7 @@
                       <img src="img/circle-arrow.svg" alt=""><span>обновить</span>
                     </a>
                     <div class="tahometer__time">
-                      Последнее обновление: <span>19.01.2021 в 15:43</span>
+                      Значение рейтинга на <span>19.11.2021 15:43 </span>
                     </div>
                   </div><!-- /.tahometer__update -->
                 </div><!-- /.lkpkr__dynamic -->
@@ -332,7 +379,8 @@
                 </div>
                 <div class="serv__main">
                   <div class="serv__title">ПКР 12</div>
-                  <div class="serv__info">6 кредитных отчетов. <a href="" class="link_blue">Подробнее</a>
+                  <div class="serv__info">Динамика персонального кредитного <br> рейтинга за год. <a href=""
+                      class="link_blue">Подробнее</a>
                   </div><!-- /.serv__info -->
                   <div class="serv__date">
                     Последний запрос <a href="" class="link_blue">22.12.2020</a>
@@ -469,7 +517,7 @@
 
                   </div>
                   <div class="serv__actions">
-                    <div class="serv__price">750 ₽</div><!-- /.serv__price -->
+                    <div class="serv__price"></div><!-- /.serv__price -->
                     <div class="serv__button"><a href=""
                         class="btn_main btn_main_default btn_main_white inactive inactive_black">Продлить бесплатно</a>
                       <!-- /.btn -->

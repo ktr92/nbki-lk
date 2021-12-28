@@ -13,12 +13,19 @@
         <div class="lkform">
           <form action="">
             <div class="lkform__title">Вход в личный кабинет</div>
+            <!-- Если поле заполнен оверно то 
+              1. input получает класс input-complete
+              2. lkform__label получает класс lkform__label_complete -->
             <div class="lkform__input">
-              <input type="text" class="forminput input-error" placeholder="Электронная почта" value="+7 915 700-60-50">
-              <span class="lkform__label lkform__label_error">Телефон или почта</span>
+              <input type="text" class="forminput" placeholder="Почта" value="+7 915 700-60-50">
+              <span class="lkform__label">Почта</span>
 
             </div>
             <!-- /.lkform__input -->
+
+            <!-- Если ошибка то 
+              1. input получает класс input-error
+              2. lkform__label получает класс lkform__label_error -->
             <div class="lkform__input">
               <input type="password" class="forminput input-error" placeholder="Пароль" value="11111111">
               <div class="error_text">Неверный логин или пароль</div>
@@ -26,6 +33,7 @@
 
             </div>
             <!-- /.lkform__input -->
+
 
 
             <div class="lkform__check check-block">

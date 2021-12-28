@@ -127,6 +127,7 @@
 .lkpkr__dynamic {
   padding-left: 15px;
   position: relative;
+  padding-right: 30px;
 }
 
 .lkpkr__title {
@@ -158,10 +159,11 @@
 }
 
 .tahometerblock {
-  width: 288px;
+  /*  width: 288px; */
   position: relative;
   margin-right: 25px;
 
+  margin: auto;
 }
 
 .tahometer {
@@ -352,6 +354,7 @@
   border-radius: 50%;
   overflow: hidden;
   margin-top: -8px;
+  margin-right: -12px;
 }
 
 .offer__logo {}
@@ -844,7 +847,7 @@
 
 .lkgrid__item .card {
   margin-bottom: 0;
-  padding-right: 17px;
+  /* padding-right: 17px; */
 }
 
 .lkservice__name {
@@ -1249,6 +1252,7 @@ section>.container>h1 {
 
 .lkpkr__content {
   padding-bottom: 32px;
+  padding-bottom: 0;
 }
 
 .lkpkr__text_medium p {
@@ -1397,6 +1401,10 @@ section>.container>h1 {
   .lkpkr_type2 .lkpkr__title {
     position: absolute;
     top: 0;
+    max-width: 243px;
+    margin: auto;
+    left: 0;
+    right: 0;
   }
 
   .lkgrid__items_two .lkgrid__item.lkgrid__item_large .card {
@@ -1465,6 +1473,10 @@ section>.container>h1 {
 
   .lkpkr__socials {
     left: 32px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
   }
 
   .lkpkr__content {
@@ -1513,7 +1525,7 @@ section>.container>h1 {
   }
 
   .lkgrid__items {
-    padding-bottom: 8px;
+    padding-bottom: 12px;
   }
 
   .serv__left {

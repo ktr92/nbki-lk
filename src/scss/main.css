@@ -73,6 +73,8 @@ body {
 	padding: 0 !important;
 	overflow-x: hidden;
 	background: #ECEEF6;
+	scroll-behavior: smooth;
+
 }
 
 * {
@@ -2696,7 +2698,8 @@ body.fixed2 {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	max-width: 600px;
+	max-width: 700px;
+	padding-top: 15px;
 }
 
 .mainfooter__navs_flex>div {
@@ -4989,14 +4992,14 @@ button.pageaccordion3__title.active:after {
 }
 
 input.forminput.input-error {
-	border: 1px solid #FF0029;
+	border: 1px solid #FF0029 !important;
 }
 
-input.forminput:focus {
+/* input.forminput:focus {
 	border: 1px solid #4563FF;
-}
+} */
 
-input.forminput.active {
+input.input-complete {
 	border: 1px solid #4563FF;
 }
 
@@ -5224,6 +5227,10 @@ input.forminput.active {
 
 }
 
+.lktable_type3 td span.lktable__tdlarge.lktable__tdlarge_links {
+	color: #4563FF;
+}
+
 @media (max-width: 1170px) {
 	.headercenter {
 		width: initial;
@@ -5300,6 +5307,10 @@ input.forminput.active {
 }
 
 @media (max-width: 999px) {
+	.listblock__list li {
+		max-width: 100%;
+	}
+
 	.pageiconbg__icon {
 		right: 0;
 	}
@@ -6193,7 +6204,7 @@ input.forminput.active {
 		font-size: 14px;
 		line-height: 17px;
 		margin-bottom: 16px;
-		max-width: 212px;
+		/* 	max-width: 212px; */
 	}
 
 	.listblock__green {}
@@ -6441,8 +6452,12 @@ input.forminput.active {
 		display: none;
 	}
 
-	.logo svg {
+	.logo img {
 		width: 87px;
+	}
+
+	.headertop__login .tooltip {
+		display: none;
 	}
 
 	.header__main {
@@ -6930,6 +6945,10 @@ input.forminput.active {
 }
 
 @media (max-width: 719px) {
+	.serv__info a {
+		margin-top: 13px;
+	}
+
 
 
 	.teamfull__content {

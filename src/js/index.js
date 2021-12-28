@@ -2,7 +2,20 @@ import './maskedinput.min.js'
 import './bootstrap.min.js'
 
 
+
+
 $(document).ready(function () {
+
+  jQuery("a.scrollTo").click(function (event) {
+    event.preventDefault()
+    let elementClick = jQuery(this).attr("href");
+    let destination = jQuery(elementClick).offset().top - 90;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 400);
+    return false;
+  });
+
   $("#checkbox_confirm").click(function () {
     $(this).closest('form').find('.js-next').attr("disabled", !this.checked);
   });
@@ -159,6 +172,8 @@ $(document).ready(function () {
 
 
 
+
+
   /* $('.lkgrid_wrap .lkgrid__items').each(function () {
     const items = $(this).find('.lkgrid__item')
     console.log(items)
@@ -166,8 +181,8 @@ $(document).ready(function () {
   }) */
 
 
-  /* $("input[name=date]").mask("99.99.9999");
-   */
+  $("input.forminput_date").mask("99.99.9999");
+  $("input.forminput_passport").mask("9999 999999");
 
 });
 
@@ -184,108 +199,147 @@ $(document).ready(function () {
   });
 })(jQuery);
 
-
-$(function() {
-
-  var rawData = 77,
-    data = getData(rawData);
-
-  function getData(rawData) {
-    var data = [],
-      start = Math.round(Math.floor(rawData / 10) * 10);
-    data.push(rawData);
-    for (let i = start; i > 0; i -= 1) {
-      data.push({
-        y: i
-      });
+function renderChartCustom(value) {
+  var sectors = [
+    0, 0, 0, 0, 1332
+  ];
+  if (value > 0 && value < 1000) {
+    sectors[4] = sectors[4] - value;
+    sectors[0] = ((value - 179) >= 0) ? 179 : value;
+    sectors[1] = ((value - 623) >= 0) ? 444 : (((value - 179) > 0) ? (value - 179) : 0);
+    sectors[2] = ((value - 912) >= 0) ? 289 : (((value - 623) > 0) ? (value - 623) : 0);
+    sectors[3] = ((value - 999) >= 0) ? 87 : (((value - 912) > 0) ? (value - 912) : 0);
+    document.getElementById('taho-overlay-main-digit').textContent = value;
+    var desctext = '';
+    if (value <= 179) {
+      desctext = 'минимум';
+    } else if (value <= 623) {
+      desctext = 'низкий';
+    } else if (value <= 912) {
+      desctext = 'средний';
+    } else {
+      desctext = 'высокий';
     }
-    return data;
+    document.getElementById('taho-overlay-description').textContent = desctext;
+  } else {
+    document.getElementById('taho-overlay-main-digit').textContent = '';
+    document.getElementById('taho-overlay-description').textContent = '';
   }
-
-  Highcharts.chart('container', {
-    chart: {
-      type: 'solidgauge',
-      marginTop: 10
-    },
-    
+  console.log(value);
+  console.log(sectors);
+  var chart2 = new CanvasJS.Chart("taho-overlay-chart-two", {
+    animationEnabled: true,
     title: {
-      text: ''
-    },
-    
-    subtitle: {
-      text: rawData,
-      style: {
-        'font-size': '60px'
-      },
-      y: 200,
-      zIndex: 7
-    },
 
-    tooltip: {
-      enabled: false
     },
-
-    pane: [{
-      startAngle: -120,
-      endAngle: 120,
-      background: [{ // Track for Move
-        outerRadius: '100%',
-        innerRadius: '80%',
-        backgroundColor: Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0.3).get(),
-        borderWidth: 0,
-        shape: 'arc'
-      }],
-      size: '120%',
-      center: ['50%', '65%']
-    }, {
-      startAngle: -120,
-      endAngle: 120,
-      size: '95%',
-      center: ['50%', '65%'],
-      background: []
-    }],
-
-    yAxis: [{
-      min: 0,
-      max: 100,
-      lineWidth: 2,
-      lineColor: 'white',
-      tickInterval: 4,
-      labels: {
-        enabled: false
-      },
-      minorTickWidth: 0,
-      tickLength: 50,
-      tickWidth: 0,
-      tickColor: 'white',
-      zIndex: 6,
-      stops: [
-        [0, '#FF0029'],
-        [0.301, '#FAF354'],
-        [0.601, '#6BFA54'],
-        [1, '#56C048'],
-        
-        
+    data: [{
+      type: "doughnut",
+      startAngle: 60,
+      innerRadius: 70,
+      indexLabelFontSize: 17,
+      startAngle: 135,
+      indexLabel: "",
+      toolTipContent: "",
+      dataPoints: [{
+          y: sectors[0],
+          color: "#FF0028"
+        },
+        {
+          y: sectors[1],
+          color: "#F9F353"
+        },
+        {
+          y: sectors[2],
+          color: "#70FD57"
+        },
+        {
+          y: sectors[3],
+          color: "#5FC152"
+        },
+        {
+          y: sectors[4],
+          color: "white"
+        },
       ]
-    }, {
-      linkedTo: 0,
-      pane: 1,
-      lineWidth: 5,
-      lineColor: 'white',
-      tickPositions: [],
-      zIndex: 6
-    }],
-    
-    series: [{
-      animation: false,
-      dataLabels: {
-        enabled: false
-      },
-      borderWidth: 0,
-      color: Highcharts.getOptions().colors[0],
-      radius: '100%',
-      innerRadius: '80%',
-      data: data
     }]
   });
-});
+  chart2.render();
+}
+
+window.onload = function () {
+
+  var chart = new CanvasJS.Chart("taho-chartContainer", {
+    animationEnabled: false,
+    title: {
+
+    },
+    data: [{
+      type: "doughnut",
+      startAngle: 60,
+      innerRadius: 130,
+      indexLabelFontSize: 17,
+      startAngle: 135,
+      indexLabel: "",
+      toolTipContent: "",
+      dataPoints: [{
+          y: 179,
+          color: "#FF0028"
+        },
+        {
+          y: 444,
+          color: "#F9F353"
+        },
+        {
+          y: 289,
+          color: "#70FD57"
+        },
+        {
+          y: 87,
+          color: "#5FC152"
+        },
+        {
+          y: 333,
+          color: "white"
+        },
+      ]
+    }]
+  });
+  chart.render();
+
+  renderChartCustom(320);
+
+  var input = document.getElementById('inputval');
+
+  input.oninput = function () {
+    renderChartCustom(input.value);
+  };
+
+}
+
+
+$(document).ready(function () {
+
+  $('.lkform__input input').each(function () {
+    if ($(this).val() != "") {
+      $(this).siblings('.lkform__label').show()
+    }
+  })
+
+  $('.lkform__input input').focusin(function (event) {
+    $(this).siblings('.lkform__label').show()
+    $(this).addClass('placeholder_white')
+  })
+
+  $('.lkform__input input').focusout(function (event) {
+    if ($(this).val() == "") {
+      $(this).siblings('.lkform__label').hide()
+    } else {
+
+    }
+    $(this).removeClass('placeholder_white')
+  })
+
+
+
+
+})
