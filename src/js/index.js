@@ -109,6 +109,7 @@ $(document).ready(function () {
   })(jQuery);
 
 
+
   $(function () {
     function rand(a) {
       return 5 + Math.floor(Math.random() * a)
@@ -339,7 +340,9 @@ $(document).ready(function () {
     $(this).removeClass('placeholder_white')
   })
 
-
+  setTimeout(() => {
+    window.dispatchEvent(new Event('resize'));
+  }, 1)
 
 
 })
