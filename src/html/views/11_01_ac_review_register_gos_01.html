@@ -1,0 +1,218 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><span>Мой профиль</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li><a href="#">Обзор</a></li>
+        <li class="active"><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="pagecols">
+        <div class="pagecols__aside">
+          <aside>
+            <div class="pageslideto">
+              <ul>
+                <li><a href="#block1" class="scrollTo">Паспортные данные</a></li>
+                <li><a href="#block2" class="scrollTo">Контактные данные</a></li>
+                <li><a href="#block3" class="scrollTo">Управление подписками</a></li>
+              </ul>
+            </div><!-- /.pageslideto -->
+          </aside>
+        </div><!-- /.pagecols__aside -->
+        <div class="pagecols__main">
+          <div class="pagecontent">
+            <div class="pageheader">
+              <div class="text1">
+                <p>
+                  Для получения доступа к услугам личного кабинета необходимо подтвердить персональные данные с помощью
+                  учетной записи на Госуслугах.
+
+                </p>
+              </div><!-- /.text1 -->
+              <div class="text">
+                <p>Данные, предоставляемые в личном кабинете НБКИ, строго конфиденциальны и могут быть доступны только
+                  их
+                  владельцу. Для подтверждения того, что именно вы являетесь владельцем запрашиваемых данных, вам нужно
+                  единоразово пройти процедуру верификации через Госуслуги.
+                </p>
+                <p>Этот способ верификации считается абсолютно достоверным и безопасным, так как ваша учетная запись
+                  прошла государственную идентификацию и доступ к ней имеете только вы.
+                </p>
+              </div><!-- /.text -->
+            </div><!-- /.pageheader -->
+
+            <div class="card" id="block1">
+              <div class="card__content">
+                <div class="card__header card__header_red">
+                  <h3>Паспортные данные </h3>
+                  <span class="status status_red">не подтверждены</span><!-- /.status -->
+                  <div class="tooltip tooltip_red  visible">
+                    <span class="tooltiptext">
+                      <p>Последний запрос на Госуслуги был 15 марта 2021 в 14:23:53.</p>
+                      <p>Данный паспорт уже подтвержден для учетной записи ng@gmail.com</p>
+                    </span>
+                  </div>
+                </div><!-- /.card__header -->
+
+
+                <div class="card__form cardform">
+                  <form action="">
+                    <div class="cardform__input">
+                      <div class="cardform__main">
+                        <label for="">Фамилия </label>
+                        <input type="text" class="forminput" placeholder="Афиногенов" value="Афиногенов">
+                      </div>
+                    </div>
+
+                    <div class="cardform__input">
+                      <div class="cardform__main">
+                        <label for="">Имя * </label>
+                        <input type="text" class="forminput" placeholder="Артем" value="Артем">
+                      </div>
+                    </div>
+                    <div class="cardform__input">
+                      <div class="cardform__main">
+                        <div class="cardform__items">
+                          <div class="cardform__item">
+                            <label for="">Отчество *</label>
+                            <input type="text" class="forminput" placeholder="Михайлович" value="Михайлович">
+                          </div>
+                        </div>
+                        <div class="cardform__params">
+                          <div class="cardform__check">
+                            <div class="check-block check-block_big">
+                              <input name="n1_0" id="n1_0" type="checkbox" class="inputcheckbox">
+                              <label for="n1_0"><span>Отсутствует</span></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <div class="cardform__input">
+                      <div class="cardform__main">
+                        <label for="">Дата рождения * </label>
+                        <input type="text" name="date" class="forminput forminput_date" placeholder="01.01.1990"
+                          value="01.01.1990">
+                      </div>
+                    </div>
+                    <div class="cardform__input">
+                      <div class="cardform__main">
+                        <label for="">Серия и номер</label>
+                        <input type="text" name="passport" class="forminput forminput_passport"
+                          placeholder="12 34 567890" value="12 34 567890">
+                      </div>
+                    </div>
+                    <div class="cardform__message">
+                      * После подтверждения на Госуслугах эти <br>поля изменить нельзя
+                    </div><!-- /.cardform__message -->
+
+                    <div class="cardform__buttons">
+                      <button class="btn_main btn_main_default btn_main_icon">
+                        <img src="img/gos.svg" alt="">
+                        <span>Подтвердить через Госуслуги</span>
+                      </button>
+                      <a href="" class="btn_main btn_main_default btn_main_white">Отмена</a>
+                    </div><!-- /.cardform__buttons -->
+                  </form>
+                </div><!-- /.card__form -->
+              </div><!-- /.card__content -->
+            </div><!-- /.card -->
+
+            <div class="card" id="block2">
+              <div class="card__content">
+                <div class="card__header">
+                  <h3>Контактные данные</h3>
+                </div><!-- /.card__header -->
+                <form action="">
+                  <div class="cardform__input cardform__input_change">
+                    <div class="cardform__main">
+                      <label for="">Мобильный телефон </label>
+                      <!-- <input type="text" disabled class="forminput" placeholder="" value="+7 900 800-70-60"> -->
+                      <span class="forminput disabled">
+                        +7 900 800-70-60
+                      </span>
+                    </div>
+                    <div class="cardform__change"> <a href="" class="link_blue">Изменить</a></div>
+                  </div>
+                  <div class="cardform__input cardform__input_change">
+                    <div class="cardform__main">
+                      <label for="">Электронная почта</label>
+                      <!-- <input type="text" disabled class="forminput" placeholder="" value="afinogenov@gmail.com"> -->
+                      <span class="forminput disabled">
+                        afinogenov@gmail.com
+                      </span>
+                    </div>
+                    <div class="cardform__change"> <a href="" class="link_blue">Изменить</a></div>
+                  </div>
+                  <div class="cardform__input cardform__input_change">
+                    <div class="cardform__main">
+                      <label for="">Пароль</label>
+                      <!-- <input type="password" disabled class="forminput" placeholder="" value="22222222222"> -->
+                      <span class="forminput disabled">
+                        22222222222
+                      </span>
+                    </div>
+                    <div class="cardform__change"> <a href="" class="link_blue">Изменить</a></div>
+                  </div>
+                </form>
+              </div><!-- /.card -->
+            </div>
+
+            <div class="card" id="block3">
+              <div class="card__content">
+                <div class="card__header">
+                  <h3>Управление подписками</h3>
+                </div><!-- /.card__header -->
+                <form action="">
+                  <div class="cardform__check cardform__check_small">
+                    <div class="check-block check-block_big">
+                      <input name="n2_0" id="n2_0" type="checkbox" checked class="inputcheckbox">
+                      <label for="n2_0"><span>Хочу получать email рассылку</span></label>
+                    </div>
+                  </div>
+                  <!--<div class="cardform__check cardform__check_small">
+                    <div class="check-block check-block_big">
+                      <input name="n3_0" id="n3_0" type="checkbox" class="inputcheckbox">
+                      <label for="n3_0"><span>Хочу получать sms рассылку</span></label>
+                    </div>
+                  </div>-->
+                </form>
+              </div>
+            </div>
+
+
+
+          </div><!-- /.pagecontent -->
+        </div><!-- /.pagecols__main -->
+      </div><!-- /.pagecols -->
+    </div><!-- /.container -->
+  </section>
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

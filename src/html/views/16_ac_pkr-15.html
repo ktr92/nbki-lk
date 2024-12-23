@@ -1,0 +1,137 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><a href=""><span>Услуги</span></a></li>
+        <li><span>Кредитная история</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li><a href="#">Обзор</a></li>
+        <li><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li class="active"><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+
+      <div class="card card_lkpkr card_lkpkr_default">
+        <div class="lkpkr lkpkr_type3 dflex lkpkr_reverse">
+          <div class="lkpkr__left">
+            <div class="lkpkr__content">
+              <div class="lkpkr__title lkpkr__title_mleft">Персональный кредитный рейтинг 12</div>
+
+              <div class="lkpkr__text">
+                <p>Динамика изменений Персонального кредитного рейтинга за год</p>
+
+              </div>
+
+              <div class="smallinfo">
+                <img src="img/attention.svg" alt="">
+                <span>
+                  Примечание: значение ПКР внутри каждого месяца может меняться в зависимости от того, на какое число
+                  был
+                  сделан расчет
+                </span>
+
+              </div>
+
+
+            </div>
+          </div><!-- /.lkpkr__left -->
+          <div class="lkprk__right">
+            <div class="getserv">
+
+              <div class="getserv__buttons">
+                <div class="getserv__button"><a href=""
+                    class="btn_main btn_main_default btn_main_white inactive inactive_black">699 ₽</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Преимущества ПКР 12</h2>
+
+
+      <div class="lkgrid lkgrid_type32 lkgrid_type323 lkgrid_wrap">
+        <div class="lkgrid__items lkgrid__items_wrap">
+          <div class="lkgrid__item ">
+            <div class="card card_default">
+              <div class="lkservice lkservice_short">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_blue round_border"></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_extrasmall">Увидеть, как менялось качество вашей кредитной
+                    истории за последние 12 месяцев</div>
+                  <!-- /.lkservice__title -->
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+          <div class="lkgrid__item ">
+            <div class="card card_default">
+              <div class="lkservice lkservice_short">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_blue "></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_extrasmall">Узнать, как влияли на рейтинг вовремя
+                    сделанные
+                    платежи по кредитам</div>
+                  <!-- /.lkservice__title -->
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+          <div class="lkgrid__item ">
+            <div class="card card_default">
+              <div class="lkservice lkservice_short">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_red"></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_extrasmall">Узнать, как влияли на рейтинг вовремя
+                    сделанные
+                    платежи по кредитам</div>
+                  <!-- /.lkservice__title -->
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+
+
+        </div><!-- /.lkgrid__items -->
+      </div><!-- /.lkgrid -->
+
+    </div><!-- /.container -->
+  </section>
+
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

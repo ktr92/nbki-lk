@@ -1,0 +1,442 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import '../fonts/fonts.css';
+@import './header.scss';
+@import './main.css';
+@import './loginpage.scss';
+@import './pages.scss';
+@import './services.scss';
+@import './cards.scss';
+@import './graphs.scss';
+@import './charts.scss';
+
+body {
+  min-width: 320px;
+  font-family: Formular, sans-serif;
+  @include clear;
+}
+
+* {
+  font-family: Formular, sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  overflow: hidden;
+}
+
+
+
+@media (min-width: 768px) {
+  .onlyMobile {
+    display: none !important;
+  }
+}
+
+
+@include small-screen {
+  .onlyMobile {
+    display: block;
+  }
+
+  .onlyDesktop {
+    display: none !important;
+  }
+
+}
+
+
+.container {
+  @include container;
+}
+
+table tbody tr {
+  border: none;
+}
+
+.infoToppage {
+  padding-bottom: 4px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.lktextBottom {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 23px 23px;
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.lktextBottom p {
+  margin: 0 0 15px 0;
+}
+
+.lktextBottom p:last-child {
+  margin-bottom: 0;
+}
+
+section>.container>h2 {
+  margin-bottom: 32px;
+}
+
+.inactive td span {
+  color: #AEB5D1 !important;
+}
+
+.onchange .cardform__change {
+  display: none;
+}
+
+.lktable_modal td {
+  padding-right: 42px;
+  padding-top: 16px;
+}
+
+.lkpkr__text {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.lktable thead th a>img {
+  vertical-align: inherit;
+}
+
+
+.card_lkpkr_new {
+  width: 100%;
+  margin: 0 0 12px 0;
+}
+
+.card_lkpkr_new #taho-container {
+  transform: scale(.85);
+}
+
+.card_lkpkr_new .tahometerblock {
+  left: -17px;
+}
+
+.card_lkpkr_new .white1 {
+  top: 28px;
+}
+
+.socials__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 7px;
+  /* #7B7794 */
+  display: none;
+  color: #7B7794;
+}
+
+.lkform__label {
+  display: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  /* #AEB5D1 */
+
+  color: #AEB5D1;
+}
+
+.lkform__label_error {
+  color: #ff0029 !important;
+}
+
+.lkform__label_complete {
+  color: #4563FF !important;
+}
+
+/* .lkform__input.complete {
+  border: 1px solid #4563ff;
+} */
+
+.placeholder_white::-webkit-input-placeholder {
+  color: #fff
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card__header_red .tooltip {
+    position: absolute;
+    top: 40px;
+    right: unset;
+    width: auto;
+    left: calc(100% - 178px);
+    transform: none;
+  }
+
+  .card__header_red .tooltip .tooltiptext:after {
+    left: unset;
+    right: 5px;
+  }
+
+  .getserv__text {
+    padding-bottom: 63px;
+  }
+
+  .getserv {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .lkpkr__text {
+    padding-right: 20px;
+  }
+
+  .getserv_prk {
+    padding-bottom: 63px;
+    align-items: flex-start;
+    height: initial;
+    justify-content: center;
+  }
+
+
+}
+
+@include large-screen {}
+
+@include medium-screen {
+  .mainfooter {
+    display: block;
+    max-width: 320px;
+    margin: auto;
+
+  }
+
+  .lktable_modal td {
+    padding-right: 0;
+  }
+
+
+  .lkservice_short .lkservice__content {
+    padding-bottom: 0;
+  }
+
+  .lkservice_small .lkservice__content {
+    padding-bottom: 0;
+  }
+
+
+
+
+
+
+  .mainfooter__navs_flex>div {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .mainfooter__navs_flex {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .mainfooter__navs_flex>div:nth-child(1) {
+    order: 3;
+  }
+
+  .mainfooter__navs_flex>div:nth-child(2) {
+    order: 1;
+  }
+
+  .mainfooter__navs_flex>div:nth-child(3) {
+    order: 2;
+  }
+
+  .mainfooter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mainfooter__left {
+    width: 100%;
+    order: 2;
+  }
+
+  .mainfooter__right {
+    width: 100%;
+    order: 1;
+  }
+
+
+
+}
+
+@include small-screen {
+  .socials__text {
+    display: block;
+    text-align: center;
+  }
+
+  .lkpkr__text.lkpkr__text_medium {
+    margin-bottom: 40px;
+  }
+
+  .card_lkpkr {
+    border-radius: 5px;
+  }
+
+  .lkpkr__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .lkpkr_type2 .lkpkr__text {
+    padding-top: 29px;
+    margin-top: 0;
+  }
+
+  .lkpkr {
+    padding-bottom: 32px;
+  }
+
+  .lkpkr__subtitle br {
+    display: none;
+  }
+
+  .lkprk__right {
+    width: 100%;
+  }
+
+  .getserv {
+    width: 320px;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .getserv .btn_main_default {
+    width: 100%;
+  }
+
+
+  .lkgrid_type32 .lkgrid__item {
+    height: 100%;
+  }
+
+  .card_default,
+  .lkgrid__item .card.card_default {
+    height: 100%;
+  }
+
+  .check-block label {
+    text-align: left;
+  }
+
+  #footer {
+    margin-top: 0;
+  }
+
+  .lkform__text {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lkform {
+    padding-bottom: 32px;
+  }
+
+  .lkapp {
+    margin-top: 32px;
+  }
+
+  /* .lkform form *:last-child {
+    margin-bottom: 0;
+  } */
+
+
+
+  .loginpage .text {
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .link_blue {
+    text-decoration: underline;
+  }
+
+  .mainfooter__navs_flex {
+    display: flex;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+  }
+
+
+  .mainfooter__navs_flex>div {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer__bottom {
+    padding: 36px 0;
+  }
+
+  .mainfooter__navs_flex {
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+
+
+
+  .footer__main {
+    padding-bottom: 0;
+  }
+
+  .getserv__img {
+    margin-bottom: 17px;
+  }
+
+  .getserv_prk {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+}
+
+@include extrasmall-screen {
+  .lkgrid_type323 {}
+
+  .lkgrid_type321 .lkgrid__item .card.card_default {
+    min-height: 220px;
+  }
+
+  .lkgrid__item .card.card_default {
+    min-height: initial;
+  }
+
+  .lkgrid_type322 .lkgrid__item:nth-child(3) {
+    order: 2;
+  }
+
+  .lkgrid_type322 .lkgrid__item:nth-child(2) {
+    order: 3;
+  }
+
+  .lkgrid_type322 .lkgrid__item:nth-child(1) {
+    order: 1;
+  }
+
+
+
+}

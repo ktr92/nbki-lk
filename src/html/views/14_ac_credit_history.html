@@ -1,0 +1,196 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><a href=""><span>Услуги</span></a></li>
+        <li><span>Кредитная история</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li><a href="#">Обзор</a></li>
+        <li class="active"><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+
+      <div class="card card_lkpkr card_lkpkr_default">
+        <div class="lkpkr lkpkr_type3 dflex">
+          <div class="lkpkr__left">
+            <div class="lkpkr__content">
+              <div class="lkpkr__title">Кредитная история</div>
+              <div class="lkpkr__text">
+                <p>Кредитная история – это информация, которая характеризует вас, как
+                  заемщика. Все кредитные организации обязательно будут использовать ее
+                  для принятия решения по вашей заявке на новый кредит или займ. Поэтому
+                  важно следить за достоверностью внесенных в нее сведений.</p>
+
+              </div>
+            </div>
+          </div><!-- /.lkpkr__left -->
+          <div class="lkprk__right">
+            <div class="getserv">
+              <div class="getserv__text">Первые 2 отчета в год предоставляются бесплатно, каждый последующий — 450 ₽
+              </div>
+              <div class="getserv__buttons">
+                <div class="getserv__info">Доступно 2 бесплатных отчета</div>
+                <div class="getserv__button"><a href=""
+                    class="btn_main btn_main_default btn_main_white inactive inactive_black">Получить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>В кредитной истории содержатся данные</h2>
+
+
+      <div class="lkgrid lkgrid_type32 lkgrid_type321">
+        <div class="lkgrid__items">
+          <div class="lkgrid__item ">
+            <div class="card card_default">
+              <div class="lkservice lkservice_small">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_blue round_border"></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_small">О вас</div>
+                  <div class="lkservice__text lkservice__text_small">ФИО, дата и место рождения, паспортные данные, ИНН
+                    и СНИЛС (если предоставлялись), адрес места жительства</div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item">
+            <div class="card card_default">
+              <div class="lkservice lkservice_small">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_blue "></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_small">О ваших кредитах</div>
+                  <div class="lkservice__text lkservice__text_small">Кредиторы, даты, суммы, сроки, статусы, информация
+                    о просрочках, поручительстве, переуступке прав, судебных спорах, причинах отказа в кредите</div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item onlyDesktop">
+            <div class="servicecard servicecard_small servicecard_link servicecard_large">
+              <div class="servicecard__icon_sm">
+                <div class="servicecard__icon_small"> <svg width="72" height="72" viewBox="0 0 72 72" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 58V64C1 65.6569 2.34314 67 4 67H52C54.7614 67 57 64.7614 57 62V54" stroke="#7B7794"
+                      stroke-width="2"></path>
+                    <path
+                      d="M1 58H0V59H1V58ZM4 2H52V0H4V2ZM52 57H1V59H52V57ZM2 58V4H0V58H2ZM58 53V6H56V53H58ZM52 59C55.3137 59 58 56.3137 58 53H56C56 55.2091 54.2091 57 52 57V59ZM52 2C54.2091 2 56 3.79086 56 6H58C58 2.68629 55.3137 0 52 0V2ZM4 0C1.79086 0 0 1.79086 0 4H2C2 2.89543 2.89543 2 4 2V0Z"
+                      fill="#7B7794"></path>
+                    <line x1="49" y1="16" x2="13" y2="16" stroke="#7B7794" stroke-width="2" stroke-linecap="round">
+                    </line>
+                    <line x1="49" y1="24" x2="13" y2="24" stroke="#7B7794" stroke-width="2" stroke-linecap="round">
+                    </line>
+                    <line x1="5" y1="57" x2="5" y2="1" stroke="#7B7794" stroke-width="2" stroke-linecap="round"></line>
+                    <path d="M8 62H18V69C18 70.6569 16.6569 72 15 72H11C9.34315 72 8 70.6569 8 69V62Z" fill="#7B7794">
+                    </path>
+                  </svg> </div>
+              </div>
+
+              <div class="servicecard__title_sm"> <span>Ознакомтесь с инструкцией по <a class="linksmall"
+                    href="//nbki.ru/documents/credit report_for-subject.pdf" target="_blank" tabindex="0">прочтению
+                    кредитной
+                    истории</a></span> </div>
+            </div>
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item">
+            <div class="card card_default">
+              <div class="lkservice lkservice_small">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_red "></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_small">О других обязательствах</div>
+                  <div class="lkservice__text lkservice__text_small">Информация о неисполнении решений суда о взыскании
+                    сумм за неуплату алиментов, услуг ЖКХ или связи</div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item">
+            <div class="card card_default">
+              <div class="lkservice lkservice_small">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_red round_border"></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_small">О том, кто запрашивал вашу КИ</div>
+                  <div class="lkservice__text lkservice__text_small">Даты запросов, наименования и ИНН запрашивавших
+                    организаций</div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item onlyMobile lkgrid__item_mfull">
+            <div class="servicecard servicecard_small servicecard_link servicecard_large">
+              <div class="servicecard__icon_sm">
+                <div class="servicecard__icon_small"> <svg width="72" height="72" viewBox="0 0 72 72" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 58V64C1 65.6569 2.34314 67 4 67H52C54.7614 67 57 64.7614 57 62V54" stroke="#7B7794"
+                      stroke-width="2"></path>
+                    <path
+                      d="M1 58H0V59H1V58ZM4 2H52V0H4V2ZM52 57H1V59H52V57ZM2 58V4H0V58H2ZM58 53V6H56V53H58ZM52 59C55.3137 59 58 56.3137 58 53H56C56 55.2091 54.2091 57 52 57V59ZM52 2C54.2091 2 56 3.79086 56 6H58C58 2.68629 55.3137 0 52 0V2ZM4 0C1.79086 0 0 1.79086 0 4H2C2 2.89543 2.89543 2 4 2V0Z"
+                      fill="#7B7794"></path>
+                    <line x1="49" y1="16" x2="13" y2="16" stroke="#7B7794" stroke-width="2" stroke-linecap="round">
+                    </line>
+                    <line x1="49" y1="24" x2="13" y2="24" stroke="#7B7794" stroke-width="2" stroke-linecap="round">
+                    </line>
+                    <line x1="5" y1="57" x2="5" y2="1" stroke="#7B7794" stroke-width="2" stroke-linecap="round"></line>
+                    <path d="M8 62H18V69C18 70.6569 16.6569 72 15 72H11C9.34315 72 8 70.6569 8 69V62Z" fill="#7B7794">
+                    </path>
+                  </svg> </div>
+              </div>
+
+              <div class="servicecard__title_sm"> <span>Ознакомтесь с инструкцией по <a class="linksmall"
+                    href="//nbki.ru/documents/credit report_for-subject.pdf" target="_blank" tabindex="0">прочтению
+                    кредитной
+                    истории</a></span> </div>
+            </div>
+          </div><!-- /.lkgrid__item -->
+
+        </div><!-- /.lkgrid__items -->
+      </div><!-- /.lkgrid -->
+
+    </div><!-- /.container -->
+  </section>
+
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

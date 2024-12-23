@@ -1,0 +1,828 @@
+.q-graph {
+  display: block;
+  /* fixes layout wonkiness in FF1.5 */
+  position: relative;
+  width: 992px;
+  height: 309px;
+  margin: 15px 0;
+  padding: 0;
+  background: transparent;
+  font-size: 11px;
+
+  border-bottom: 2px solid #0A0033;
+  margin-left: 53px;
+}
+
+.q-graph caption {
+  caption-side: top;
+  width: 100%;
+  max-width: 992px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  top: -40px;
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+}
+
+.q-graph tr,
+.q-graph th,
+.q-graph td {
+  position: absolute;
+  bottom: 0;
+  width: 56px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  z-index: 3;
+
+  span {
+    padding: 0;
+  }
+}
+
+.q-graph td {
+  transition: all 0.3s ease;
+}
+
+.q-graph td:hover {
+  background-color: #4d4d4d;
+
+}
+
+.q-graph thead tr {
+  left: 100%;
+  top: 50%;
+  bottom: auto;
+  margin: -2.5em 0 0 5em;
+}
+
+.q-graph thead th {
+  width: 7.5em;
+  height: auto;
+  padding: 0.5em 1em;
+}
+
+.q-graph thead th.sent {
+  top: 0;
+  left: 0;
+  line-height: 2;
+}
+
+.q-graph thead th.paid {
+  top: 2.75em;
+  line-height: 2;
+  left: 0;
+}
+
+.q-graph tbody tr {
+  height: 350px;
+  padding-top: 2px;
+  color: #aaa;
+  border-top: none;
+}
+
+.q-graph tbody th {
+  bottom: -30px;
+  vertical-align: top;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.q-graph .bar {
+  width: 56px;
+  border: 1px solid;
+  border-bottom: none;
+  color: #000;
+}
+
+.q-graph .bar p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+}
+
+.q-graph .bar span {
+  color: #0060a9;
+  font-weight: 600;
+}
+
+.q-graph .sent {
+  left: 0;
+  border: none;
+
+
+
+  background: #4563FF;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.q-graph .paid {
+  left: 77px;
+  background-color: #7fdbff;
+  border-color: transparent;
+}
+
+.ticks {
+  position: relative;
+  top: -378px;
+  left: 43px;
+  width: 992px;
+  height: 390px;
+  z-index: 1;
+  margin-bottom: -370px;
+  font-size: 10px;
+}
+
+.ticks .tick {
+  position: relative;
+  border-bottom: 1px solid #ECEEF6;
+  width: 100%;
+  max-width: 992px;
+}
+
+
+
+.ticks .tick p {
+  position: absolute;
+  left: -3.5em;
+  top: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+
+  /* #7B7794 */
+
+  color: #7B7794;
+
+}
+
+.q-graph_line tr:after {
+  position: absolute;
+  top: -5px;
+  left: 3px;
+  right: 0;
+  margin: auto;
+  width: 11px;
+  height: 11px;
+  background: $blue;
+  border-radius: 50%;
+  content: "";
+  display: block;
+}
+
+.q-graph_line .bar p,
+.q-graph_line .bar span {
+  display: none;
+}
+
+.q-graph_line td.sent {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+hr.connection {
+  position: absolute;
+  max-width: 1050px;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: $blue;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+#qtr0 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: none;
+  height: 10px;
+  width: 10px;
+}
+
+.table-line {
+  max-height: 390px;
+}
+
+.table-bars {
+  max-height: 390px;
+}
+
+
+
+.q-graph_line td.q-value {
+  position: absolute;
+  top: -33px;
+  left: 0;
+  z-index: 3;
+  height: 61px;
+  width: 61px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $blue;
+}
+
+.q-graph_line td.q-value p {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.q-graph_line td.q-value {
+  display: none;
+}
+
+.q-graph_line tr:hover td.q-value {
+  display: flex;
+  cursor: pointer;
+}
+
+.valuelist {
+  max-width: 435px;
+  width: 100%;
+}
+
+.valuelist__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 15px;
+}
+
+.valuelist__cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+
+.valuelist__title1 {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+
+
+}
+
+
+.valuelist__title2 {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+
+}
+
+.valuelist__text1 {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  width: 85px;
+
+}
+
+.valuelist__text3 {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px 8px;
+  background: #2fd13d;
+  width: 92px;
+
+
+}
+
+.valuelist__text {
+  white-space: nowrap;
+
+
+}
+
+.valuelist__text3_low {
+  background: #2fd13d;
+}
+
+.valuelist__text3_high {
+  background: #046c0e;
+  color: #fff;
+}
+
+.valuelist__text3 span {
+  font-size: 12px;
+}
+
+.valuelist__col {
+  margin-bottom: 5px;
+
+  padding: 0 10px;
+}
+
+.valuelist__text2 {
+  background-image: url(/images/points.png);
+  width: 100%;
+  height: 3px;
+  background-position: center;
+  background-repeat: repeat-x;
+
+
+}
+
+.valuelist__cols .valuelist__col:nth-child(2) {
+  width: 100%;
+}
+
+
+
+.q-graph_line .bar p,
+.q-graph_line .bar span {
+  display: none;
+}
+
+.q-graph_line td.sent {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+
+#qtr0 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: none;
+  height: 10px;
+  width: 10px;
+}
+
+table.q-graph tbody tr:last-child {
+  border-bottom: none;
+}
+
+
+
+.q-graph_line td.q-value {
+  display: none;
+}
+
+.q-graph_line tr:hover td.q-value {
+  display: flex;
+  cursor: pointer;
+}
+
+
+.pkrvalue-params {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 15px;
+  max-width: 417px;
+}
+
+.pkrvalue-params li {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.pkrvalue-params span {
+  color: rgb(37, 38, 38);
+  text-align: left;
+}
+
+span.pkrvalue-params_left {
+  width: 100%;
+  display: inline;
+  float: left;
+  color: #c3972e;
+  padding: 5px 0;
+}
+
+span.pkrvalue-params_left>span {
+  border-bottom: 1px solid;
+  border-color: #ECEEF6;
+  width: 100%;
+  display: inherit;
+}
+
+span.pkrvalue-params_left>span>span {
+  padding-right: 5px;
+  position: relative;
+  bottom: -4px;
+  background: #fff;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  font-weight: 500;
+  text-align: center;
+
+  /* Черный */
+
+  color: #000000;
+  white-space: nowrap;
+}
+
+span.pkrvalue-params_right {
+  float: left;
+  width: 100%;
+  max-width: 68px;
+  text-align: left;
+  position: relative;
+  bottom: 0;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+span.pkrvalue-params_right.pkrvalue-params_right_blue {
+  color: $blue;
+}
+
+span.pkrvalue-params_right.pkrvalue-params_right_red {
+  color: $red;
+}
+
+.defaultcol_2cols {
+  margin-bottom: 15px;
+}
+
+span.pkrvalue-params_right_score {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  ;
+
+  width: min-content;
+  white-space: nowrap;
+  /* Темно-синий */
+
+
+  height: min-content;
+  max-width: initial;
+  width: 64px;
+}
+
+span.pkrvalue-params_right_score>span {
+  white-space: nowrap;
+  color: #0A0033;
+  padding: 0px 4px;
+  width: min-content;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+span.pkrvalue-params_right_score-red {
+  background: #FF0029;
+}
+
+span.pkrvalue-params_right_score-yellow {
+  background: #FAF354;
+}
+
+span.pkrvalue-params_right_score-lgreen {
+  background: #6BFA54;
+}
+
+span.pkrvalue-params_right_score-green {
+  background: #56C048;
+}
+
+.pkrvalue-params_head span.pkrvalue-params_left>span>span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.pkrvalue-params_head .pkrvalue-params_right span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  padding-left: 0;
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.pkrvalue-params_head .pkrvalue-params_left>span {
+  border: none;
+}
+
+li.pkrvalue-params_head {
+  margin-bottom: 0;
+}
+
+.lkpkr__text_small p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.pkrvalue-params_score {
+  margin-bottom: 30px;
+  max-width: 480px;
+}
+
+.pkrvalue-params_score li {
+  margin-bottom: 0;
+}
+
+.getserv_prk-score {
+  margin-top: 10px;
+}
+
+.getserv_prk {
+  max-height: 350px;
+}
+
+.defaultcol_2cols {
+  li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    /* #7B7794 */
+
+    color: #7B7794;
+  }
+
+  .row {
+    margin: 0 -16px;
+
+  }
+
+  .row>div {
+    padding: 0 16px;
+  }
+}
+
+.getserv {
+  max-width: 100%;
+}
+
+.lkpkr__left {
+  width: 100%;
+}
+
+.getserv__value {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40.5405px;
+  line-height: 50px;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  letter-spacing: -0.05em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000000;
+}
+
+.pkrvalue-params_score {
+  width: 100%;
+}
+
+
+
+
+@include large-screen() {
+  .table-bars {
+    overflow: visible;
+    overflow-x: auto;
+    margin-left: -20px;
+  }
+
+  .pkrvalue-params_score {
+    max-width: 430px;
+  }
+
+  .table-line {
+    overflow: visible;
+    overflow-x: auto;
+    margin-left: -20px;
+  }
+
+
+
+}
+
+@include medium-screen() {
+  .pkrvalue-params_score {
+    max-width: 350px;
+  }
+}
+
+@include small-screen() {
+  .q-graph tbody tr {
+    width: 27px;
+  }
+
+
+
+  .q-graph .bar {
+    width: 27px;
+  }
+
+  .q-graph .bar p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .ticks .tick p {
+    font-size: 6px;
+    line-height: 7px;
+  }
+
+  .q-graph tbody th {
+    font-size: 6px;
+    line-height: 7px;
+  }
+
+  .q-graph tbody tr {
+    height: 170px;
+  }
+
+  .ticks .tick {
+    height: 24px !important;
+  }
+
+  .ticks {
+    height: 170px;
+    top: -192px;
+    margin-bottom: -150px;
+  }
+
+  .ticks .tick p {
+    top: 9px;
+  }
+
+  .q-graph {
+    height: 147px;
+  }
+
+  .text-big p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 10px;
+  }
+
+  .card_default {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .q-graph,
+  .ticks {
+    width: 489px;
+  }
+
+
+
+  .ticks .tick,
+  .q-graph caption {
+    max-width: 489px;
+  }
+
+  .pkrnav {
+    padding: 5px 0 30px 0;
+  }
+
+  .card_graph {
+    background: none;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  .cardcontent {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+
+  .card_graph {
+    padding-top: 0;
+  }
+
+  .q-graph tbody th {
+    width: 27px;
+    bottom: -15px;
+  }
+
+  .smalltext {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 20px;
+  }
+
+  .ticks .tick {
+    border-bottom: 1px solid #d9dadd;
+  }
+
+  .q-graph_line td.q-value {
+    width: 25px;
+    height: 25px;
+
+  }
+
+  .q-graph_line tr:after {
+    width: 5px;
+    height: 5px;
+    left: 0px;
+
+    top: -1px;
+  }
+
+  .q-graph_line td.q-value p {
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  hr.connection {
+    height: 1px;
+  }
+
+  .q-graph_line td.q-value {
+    left: 3px;
+    top: -12px;
+  }
+
+
+  span.pkrvalue-params_left>span>span {
+    background: #eceef6;
+  }
+
+  span.pkrvalue-params_left>span {
+    border-color: #AEB5D1;
+  }
+
+  .pkrvalue-params li {
+    margin-bottom: 0;
+  }
+
+  span.pkrvalue-params_left {
+    padding-bottom: 0;
+  }
+
+  span.pkrvalue-params_right {
+    padding-bottom: 0;
+    max-width: 37px;
+  }
+
+  .pkrvalue-params_score span.pkrvalue-params_left>span>span {
+    background: #fff;
+  }
+
+  .pkrvalue-params_score span.pkrvalue-params_right {
+    max-width: initial;
+  }
+
+  .pkrvalue-params_score li {
+    padding-right: 15px;
+  }
+
+
+}

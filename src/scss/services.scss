@@ -1,0 +1,188 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+
+.lkgrid {}
+
+.lkgrid__items {
+  display: flex;
+  margin: 0 -16px;
+  flex-wrap: wrap;
+}
+
+.lkgrid__item {
+  padding: 0 16px;
+  width: 33.33333%;
+  margin-bottom: 32px;
+}
+
+.lkgrid__item .card {
+  height: 100%;
+  padding: 21px 28px 32px 28px;
+}
+
+.lkservice {
+  min-height: 236px;
+  height: 100%;
+}
+
+.lkservice__content {
+  position: relative;
+  height: 100%;
+}
+
+.lkservice__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.lkservice__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.lkservice__name_small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.lkservice__image {}
+
+.lkservice__main {}
+
+.lkservice__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.lkservice__button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  >* {
+    width: 100%;
+  }
+}
+
+.btn_main.inactive {
+  border: 2px solid #AEB5D1;
+  color: #7B7794;
+}
+
+.btn_main.inactive[disabled] {
+  color: #AEB5D1;
+  border: 2px solid #ECEEF6;
+}
+
+.lkservice__button .tooltip_top {
+  top: -39px;
+}
+
+.lkservice__button .tooltip_top .tooltiptext {
+  min-width: 209px;
+  right: 0;
+  margin: auto;
+  left: 0;
+}
+
+.tooltiptext p:last-of-type {
+  margin-bottom: 0;
+}
+
+.roundnumber {
+  border: 1px solid #7B7794;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 14px;
+  display: inline-block;
+}
+
+.lkservice__smalltext {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 12px;
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.lkservice__name_big {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+@include medium-screen {
+  .lkservice__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .lkservice__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .lkgrid__item .card {
+    padding: 14px;
+    border-radius: 5px;
+  }
+
+  .lkservice {
+    min-height: initial;
+  }
+
+  .lkservice__content {
+    padding-bottom: 70px;
+
+  }
+
+  .lkservice__button>a {
+    width: 100%;
+    min-width: min-content;
+    white-space: nowrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@include small-screen {
+  .lkgrid__items {
+    margin: 0;
+    padding-bottom: 24px;
+  }
+
+  .lkservice__header {
+    margin-bottom: 10px;
+  }
+
+  .lkgrid__item {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

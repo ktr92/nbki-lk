@@ -1,0 +1,66 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+@import './partials/animations.scss';
+
+
+.lkmenu {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 16px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 9;
+  display: none;
+}
+
+.lkmenu__content {}
+
+.lkmenu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ECEEF6;
+  padding: 12px 0;
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #000000;
+  }
+}
+
+.lkmenu__close {}
+
+.lkmenu__main {
+  padding-top: 20px;
+  border-bottom: 1px solid #ECEEF6;
+  margin-bottom: 12px;
+}
+
+.lkmenu__items {
+  padding-bottom: 4px;
+
+  li {
+    margin-bottom: 17px;
+
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      /* identical to box height */
+
+
+      color: #000000;
+    }
+  }
+}
+
+.lkmenu__footer {}

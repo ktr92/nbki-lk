@@ -1,0 +1,171 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><span>Мой профиль</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li><a href="#">Обзор</a></li>
+        <li><a href="#">Все услуги</a></li>
+        <li class="active"><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="pagecols">
+        <div class="pagecols__aside">
+          <aside>
+            <div class="pageslideto">
+              <ul>
+                <li><a href="#block1" class="scrollTo">Паспортные данные</a></li>
+                <li><a href="#block2" class="scrollTo">Контактные данные</a></li>
+                <li><a href="#block3" class="scrollTo">Управление подписками</a></li>
+              </ul>
+            </div><!-- /.pageslideto -->
+          </aside>
+        </div><!-- /.pagecols__aside -->
+        <div class="pagecols__main">
+          <div class="pagecontent">
+            <div class="pageheader">
+
+            </div><!-- /.pageheader -->
+
+            <div class="card" id="block1">
+              <div class="card__content">
+                <div class="card__header card__header_green">
+                  <h3>Паспортные данные </h3>
+                  <span class="status status_green">подтверждены
+
+                    <div class="tooltip tooltip_top visible">
+                      <span class="tooltiptext">
+                        <p>Ваши данные подтверждены. Вам доступны все услуги</p>
+                      </span>
+                    </div>
+
+
+                  </span><!-- /.status -->
+
+                </div><!-- /.card__header -->
+
+
+                <div class="card__form cardform">
+                  <form action="">
+                    <div class="lkdata">
+                      <div class="lkdata__card">
+                        <div class="lkdata__content">
+                          <div class="lkdata__item">12 34 567890</div>
+                          <div class="lkdata__item">Афиногенов Артем <br>
+                            Михайлович</div>
+                          <div class="lkdata__item">01.01.1990</div>
+                        </div><!-- /.lkdata__content -->
+                      </div><!-- /.lkdata__card -->
+                      <div class="lkdata__change"><a href="" class="link_blue">Изменить</a></div>
+                    </div><!-- /.lkdata -->
+                  </form>
+                </div><!-- /.card__form -->
+              </div><!-- /.card__content -->
+            </div><!-- /.card -->
+
+            <div class="card" id="block2">
+              <div class="card__content">
+                <div class="card__header">
+                  <h3>Контактные данные</h3>
+                </div><!-- /.card__header -->
+                <form action="">
+                  <div class="cardform__input cardform__input_change onchange">
+
+                    <div class="cardform__main">
+                      <div class="cardform__items">
+                        <div class="cardform__item">
+                          <label for="">Мобильный телефон </label>
+                          <input type="text" class="forminput" placeholder="" value="+7 900 800-70-60">
+                        </div>
+                      </div>
+                      <div class="cardform__params">
+
+                      </div>
+                    </div>
+                    <div class="cardform__change cardform__change_date"> <a href="" class="link_blue">Изменить</a></div>
+                    <div class="cardform__buttons">
+                      <button class="btn_main btn_main_default ">
+                        <span>Получить код</span>
+                      </button>
+                      <a href="" class="btn_main btn_main_default btn_main_white">Отмена</a>
+                    </div>
+                  </div>
+                  <div class="cardform__input cardform__input_change ">
+                    <div class="cardform__main">
+                      <label for="">Электронная почта</label>
+                      <!-- <input type="text" disabled class="forminput" placeholder="" value="afinogenov@gmail.com"> -->
+                      <span class="forminput disabled">
+                        afinogenov@gmail.com
+                      </span>
+                    </div>
+                    <div class="cardform__change"> <a href="" class="link_blue">Изменить</a></div>
+                  </div>
+                  <div class="cardform__input cardform__input_change ">
+                    <div class="cardform__main">
+                      <label for="">Пароль</label>
+                      <!--  <input type="password" disabled class="forminput" placeholder="" value="22222222222"> -->
+                      <span class="forminput disabled">
+                        22222222222
+                      </span>
+                    </div>
+                    <div class="cardform__change"> <a href="" class="link_blue">Изменить</a></div>
+
+                  </div>
+                </form>
+              </div><!-- /.card -->
+            </div>
+
+            <div class="card" id="block3">
+              <div class="card__content">
+                <div class="card__header">
+                  <h3>Управление подписками</h3>
+                </div><!-- /.card__header -->
+                <form action="">
+                  <div class="cardform__check cardform__check_small">
+                    <div class="check-block check-block_big">
+                      <input name="n2_0" id="n2_0" type="checkbox" checked class="inputcheckbox">
+                      <label for="n2_0"><span>Хочу получать email рассылку</span></label>
+                    </div>
+                  </div>
+                  <!--<div class="cardform__check cardform__check_small">
+                    <div class="check-block check-block_big">
+                      <input name="n3_0" id="n3_0" type="checkbox" class="inputcheckbox">
+                      <label for="n3_0"><span>Хочу получать sms рассылку</span></label>
+                    </div>
+                  </div>-->
+                </form>
+              </div>
+            </div>
+
+
+
+          </div><!-- /.pagecontent -->
+        </div><!-- /.pagecols__main -->
+      </div><!-- /.pagecols -->
+    </div><!-- /.container -->
+  </section>
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

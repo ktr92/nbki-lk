@@ -1,0 +1,138 @@
+#taho-container {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  margin: auto;
+}
+
+#taho-chartContainer {
+  height: 100%;
+  width: 100%;
+  transform: scale(0.93);
+}
+
+#taho-overlay {
+  position: absolute;
+  height: 260px;
+  width: 260px;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+
+}
+
+#taho-overlay-chart-two {
+  position: absolute;
+  height: 260px;
+  width: 260px;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  opacity: 1;
+  border-radius: 130px !important;
+  overflow: hidden;
+  transform: scale(0.93);
+}
+
+.taho-overlay-onchart-digit {
+  color: gray;
+  font-size: 12px;
+  position: absolute;
+}
+
+#taho-overlay-main-digit {
+  color: black;
+  font-size: 48px;
+  position: absolute;
+  font-weight: 500;
+  top: 125px;
+  left: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#taho-overlay-description {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+
+  top: 230px;
+  left: 20px;
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+}
+
+.white1 {
+  background: #fff;
+  left: 0;
+  position: absolute;
+  top: 11px;
+  display: block;
+  width: 999;
+  z-index: 9;
+  width: 68px;
+  height: 12px;
+  width: 100%;
+}
+
+.white2 {
+  background: #fff;
+  right: -20px;
+  position: absolute;
+  bottom: 11px;
+  display: block;
+  width: 999;
+  z-index: 9;
+  width: 68px;
+  height: 15px;
+  width: 100%;
+}
+
+.card_lkpkr_new .white2 {
+  bottom: 33px;
+}
+
+
+@media(max-width: 480px) {
+  #taho-container {
+    transform: scale(0.9);
+
+  }
+
+
+
+  .lkpkr__content {
+    padding-bottom: 5px;
+  }
+
+  .lkpkr__dynamic {
+    width: 100%;
+  }
+
+  .white1 {
+    left: 0;
+    top: 19px;
+
+  }
+
+  .white2 {
+    bottom: 28px;
+    right: 0;
+    width: 100%;
+  }
+
+  .card_lkpkr_new .white2 {
+    right: -15px;
+  }
+
+  .tahometer__update {
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+}

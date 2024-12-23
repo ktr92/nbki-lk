@@ -1,0 +1,788 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+
+.navpages {
+  margin: 19px 0 30px 0;
+}
+
+
+
+ul.navpages__list li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+}
+
+ul.navpages__list li:hover a {
+  color: #000000;
+}
+
+ul.navpages__list li.active a {
+  color: #000000;
+}
+
+ul.navpages__list li.active:after {
+  background: $blue;
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+
+.pagecols {
+  display: flex;
+}
+
+.pagecols__aside {
+  aside {
+    width: 288px;
+  }
+}
+
+.pageslideto {
+  li {
+    margin-bottom: 19px;
+
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+
+      /* #7B7794 */
+
+      color: #7B7794;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+.pagecols__main {
+  width: calc(100% - 288px);
+}
+
+.text1 p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.text p {
+  margin-bottom: 20px;
+}
+
+.pageheader {
+  max-width: 709px;
+}
+
+.status_red {}
+
+.status {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  min-height: 24px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 21px 32px 32px 32px;
+  margin-bottom: 32px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+
+.card__header_red {
+  background-image: url(../img/status_red.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+}
+
+.card__header_green {
+  background-image: url(../img/status_green.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+}
+
+.card__header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.btn_main {
+  cursor: pointer;
+}
+
+.cardform__main>* {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cardform__items {}
+
+.cardform__item {
+  margin-bottom: 14px;
+}
+
+.cardform__input {
+  margin-bottom: 14px;
+
+  width: 100%;
+
+  label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 6px;
+    display: block;
+    /* #AEB5D1 */
+
+    color: #AEB5D1;
+
+  }
+
+  input {
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #7B7794;
+    width: 100%;
+
+    &[name=date],
+    &[name=passport] {
+      width: 215px;
+    }
+  }
+
+  .check-block {
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .check-block label {
+    padding-left: 28px;
+  }
+}
+
+.cardform__message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 38px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.cardform__main input {
+  width: 320px;
+  max-width: 100%;
+}
+
+.cardform__buttons>* {
+  max-width: initial;
+  width: initial;
+  padding-left: 43px;
+  padding-right: 43px;
+  vertical-align: middle;
+  min-width: initial;
+  margin-right: 33px;
+}
+
+.cardform__input_change input:disabled,
+.cardform__input_change .disabled {
+  padding: 2px 0;
+  border: 1px solid transparent;
+  color: #000;
+  width: initial;
+
+}
+
+.cardform__input_change .cardform__main span {
+  padding-right: 10px;
+}
+
+.cardform__input_change .cardform__main {
+  width: initial;
+}
+
+.cardform__change {
+  margin-top: 10px;
+}
+
+.cardform__change_date {
+  margin-top: 0;
+}
+
+.cardform__check_small .check-block {
+  margin-bottom: 22px;
+}
+
+.cardform__check_small label {
+  padding-left: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  /* Черный */
+
+  color: #000000;
+}
+
+.cardform__input .check-block {
+  margin-top: 10px;
+}
+
+@include medium-screen {
+  .pagecols__aside {
+    display: none;
+  }
+
+  .pagecols__main {
+    width: 100%;
+  }
+
+  .headertop__login_desktop span {
+    display: none;
+  }
+}
+
+@include small-screen {
+  .headertop__login a {
+    padding-right: 0;
+  }
+
+  .breadcrumbs ul li {
+    display: none;
+  }
+
+  .breadcrumbs ul li:nth-last-child(2) {
+    display: block;
+  }
+
+  .navpages {
+    border-bottom: none;
+  }
+
+  .breadcrumbs ul li:before {
+    display: inline-block;
+    transform: rotate(180deg) translateX(5px);
+  }
+
+  ul.navpages__list li {
+    margin-right: 13px;
+  }
+
+  ul.navpages__list li {
+    padding-bottom: 6px;
+  }
+
+  ul.navpages__list li.active:after {
+    height: 2px;
+  }
+
+  ul.navpages__list li a {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .headertop__login_desktop span {
+    display: none;
+  }
+
+  .cardform__main {
+    max-width: 100%;
+  }
+
+  .card__header {
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  .cardform__buttons>* {
+    max-width: 100%;
+  }
+
+  .text1 p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .navpages {
+    margin-bottom: 23px;
+  }
+
+  .text p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .card {
+    width: calc(100% + 32px);
+    margin: 0 -16px;
+    border-radius: 0;
+    padding: 38px 16px 0 16px;
+  }
+
+  .card__content {
+    border-bottom: 1px solid #AEB5D1;
+    padding-bottom: 30px;
+
+
+  }
+
+  .pagecontent {
+    padding-bottom: 0;
+  }
+
+  .card:last-of-type .card__content {
+    border-bottom: none;
+  }
+
+  .card__header h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .status {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .card__header_red,
+  .card__header_green {
+    padding-left: 32px;
+    background-position: left top;
+  }
+
+  .cardform__input .check-block {
+    margin-left: 0;
+
+  }
+
+  .cardform__buttons>* {
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .cardform__message {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 22px;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  opacity: 1;
+}
+
+.tooltiptext {
+
+  border-radius: 5px;
+  width: 120px;
+  background: #0A0033;
+  font-size: 10px;
+  line-height: 12px;
+  min-width: 209px;
+  color: #FFFFFF;
+  visibility: hidden;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 6px);
+  left: -32px;
+  padding: 10px;
+
+}
+
+.tooltip_header .tooltiptext {
+  padding: 10px 10px 12px 10px;
+  left: unset;
+  right: 0;
+}
+
+.tooltip_header .tooltiptext p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+.tooltip_red .tooltiptext {
+  background: #FF0029;
+}
+
+.tooltiptext p {
+  margin: 0 0 10px 0;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  margin-left: 0px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #0A0033 transparent;
+}
+
+
+.tooltip_header .tooltiptext::after {
+
+  left: unset;
+  right: 30px;
+}
+
+.tooltip_top {
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: -63px;
+}
+
+.status {
+  position: relative;
+}
+
+.tooltip_top .tooltiptext {
+  bottom: unset;
+  top: 100%;
+  left: 0;
+  min-width: 168px;
+}
+
+.tooltip_top .tooltiptext::after {
+  bottom: unset;
+  top: 100%;
+  transform: rotate(180deg);
+  display: inline-block;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: min-content;
+  margin: auto;
+  border-width: 8px;
+}
+
+.tooltip_red .tooltiptext::after {
+
+  border-color: transparent transparent #FF0029 transparent;
+}
+
+.tooltip.visible .tooltiptext {
+  visibility: visible;
+}
+
+.card__header {
+  position: relative;
+}
+
+@media(min-width: 767px) {
+  .card__header_red .tooltip {
+    position: absolute;
+    width: initial;
+    top: 40px;
+    right: 0;
+    transform: translateX(-85px);
+  }
+
+  .card__header_red .tooltip .tooltiptext:after {
+    left: calc(50% - 5px);
+  }
+
+}
+
+
+.lkdata {}
+
+.lkdata__card {
+  padding: 40px;
+  background: #FFFFFF;
+  /* #ECEEF6 */
+  max-width: 320px;
+  border: 2px solid #ECEEF6;
+  box-sizing: border-box;
+  border-radius: 9px;
+  margin-bottom: 18px;
+}
+
+.lkdata__content {}
+
+.lkdata__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.lkdata__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.lkdata__change {}
+
+.link_blue {}
+
+.onchange .cardform__change {
+  display: none;
+}
+
+.onchange .cardform__main input {
+  width: 320px;
+  max-width: 100%;
+}
+
+.cardform__input_change {}
+
+.cardform__input_change .cardform__buttons {
+  display: none;
+}
+
+.cardform__input_change.onchange .cardform__buttons {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.cardform__main {
+  position: relative;
+
+}
+
+.cardform__input_change .cardform__main {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cardform__input_change .cardform__change {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cardform__main input {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+
+}
+
+.cardform__main small.cardform__info {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  max-width: 230px;
+  /* #7B7794 */
+  display: inline-block;
+  vertical-align: middle;
+  color: #7B7794;
+  margin-left: 10px;
+}
+
+.modal-backdrop {
+  background-color: rgba(10, 0, 51, 0.6);
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.lktable.lktable_modal {
+  margin-bottom: 0;
+}
+
+.lktable.lktable_modal td {
+  padding-bottom: 32px;
+}
+
+.modal-content {
+  padding: 32px;
+}
+
+.modal-header {
+  padding: 0;
+  border-bottom: none;
+}
+
+.modal-header h4 {
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.lktable_modal tr:nth-child(2n-1) {
+  background: rgba(236, 238, 246, .5);
+}
+
+.lktable_modal tr:nth-child(2n) {
+  background: #fff !important;
+}
+
+.modal__img {
+  padding: 55px 0;
+  text-align: center;
+}
+
+.modal__bodytitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.modal__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #000000;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-content {
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__textbig {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  max-width: 255px;
+  margin: auto;
+}
+
+
+@include small-screen {
+  .card__header_green .tooltip_top {
+    left: -32px;
+    top: -78px;
+  }
+
+  .card__header_green .tooltip_top .tooltiptext:after {
+    right: unset;
+    left: 5px;
+  }
+
+  .modal-content {
+    padding: 8px;
+
+  }
+
+  .modal-dialog {
+    max-width: 95% !important;
+    width: initial !important;
+    margin: 15px auto;
+  }
+
+  .modalclose {
+    top: 15px;
+    right: 15px;
+  }
+
+  .cardform__main small.cardform__info {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+    max-width: 100%;
+  }
+
+  .card .link_blue {
+    text-decoration: underline;
+  }
+
+  .cardform__main>* {
+    max-width: 100%;
+  }
+
+  .lkdata__card {
+    padding: 32px;
+  }
+
+  .lkdata__item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+}

@@ -1,0 +1,885 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><span>Обзор</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li><a href="#">Обзор</a></li>
+        <li><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li class="active"><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+
+      <div class="card card_lkpkr card_lkpkr_new">
+        <div class="lkpkr lkpkr_type2">
+          <div class="lkpkr__content">
+            <div class="lkpkr__title">Персональный кредитный рейтинг</div>
+
+            <div class="lkpkr__text lkpkr__text_medium">
+              <div class="lkpkr__subtitle">
+                Факторы, которые больше всего повлияли <br> на значение:
+              </div><!-- /.lkpkr__subtitle -->
+              <p>20% cвоевременное внесение платежей</p>
+              <p>15% количество и качество кредитов</p>
+              <p>5% кредитная активность (большое кол-во заявок)</p>
+              <p>2% наличие отказов </p>
+            </div>
+
+            <div class="lkpkr__socials">
+              <div class="socials">
+                <div class="socials__text">Поделиться в соц. сетях</div>
+                <div class="socials__items">
+                  <div class="socials__item">
+
+                    <a href="https://vk.com/public189456417">
+                      <img src="img/vk.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="socials__item">
+                    <a href="https://www.youtube.com/channel/UC-quFSK5Vpq23UOogbUcSUg" rel="nofollow" target="_blank">
+                      <img src="img/YouTube.svg" alt="">
+                    </a>
+                  </div>
+
+                  <div class="socials__item">
+                    <a href="https://www.instagram.com/nbki_official/" rel="nofollow" target="_blank">
+                      <img src="img/Instagram.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="socials__item">
+                    <a href="https://www.facebook.com/nbki.ru/" rel="nofollow" target="_blank"> <img
+                        src="img/Facebook.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="socials__item">
+                    <a href="https://ok.ru/group/57783371890929" rel="nofollow" target="_blank"> <img src="img/ok.svg"
+                        alt="">
+                    </a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div><!-- /.lkpkr__content -->
+          </div><!-- /.lkpkr__socials -->
+          <div class="lkpkr__dynamic">
+            <div class="lkpkr__score">
+              <div class="tahometerblock">
+                <span class="white1"></span>
+                <span class="white2"></span>
+
+                <div id="taho-container">
+                  <div id="taho-chartContainer">
+                    <div class="canvasjs-chart-container"
+                      style="position: relative; text-align: left; cursor: auto; direction: ltr;"><canvas
+                        class="canvasjs-chart-canvas" width="800" height="600"
+                        style="width: 400px; height: 300px; position: absolute; user-select: none;"></canvas><canvas
+                        class="canvasjs-chart-canvas" width="800" height="600"
+                        style="width: 400px; height: 300px; position: absolute; -webkit-tap-highlight-color: transparent; user-select: none;"></canvas>
+                      <div class="canvasjs-chart-toolbar"
+                        style="position: absolute; right: 1px; top: 1px; border: 1px solid transparent;"></div>
+                      <div class="canvasjs-chart-tooltip"
+                        style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 2px; z-index: 1000; pointer-events: none; display: none; border-radius: 5px;">
+                        <div
+                          style=" width: auto;height: auto;min-width: 50px;line-height: auto;margin: 0px 0px 0px 0px;padding: 5px;font-family: Calibri, Arial, Georgia, serif;font-weight: normal;font-style: italic;font-size: 14px;color: #000000;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);text-align: left;border: 2px solid gray;background: rgba(255,255,255,.9);text-indent: 0px;white-space: nowrap;border-radius: 5px;-moz-user-select:none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;} ">
+                          Sample Tooltip</div>
+                      </div><a class="canvasjs-chart-credit" title="JavaScript Charts"
+                        style="outline:none;margin:0px;position:absolute;right:2px;top:286px;color:dimgrey;text-decoration:none;font-size:11px;font-family: Calibri, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif"
+                        tabindex="-1" target="_blank" href="https://canvasjs.com/">CanvasJS.com</a>
+                    </div>
+                  </div>
+                  <div id="taho-overlay-chart-two">
+                    <div class="canvasjs-chart-container"
+                      style="position: relative; text-align: left; cursor: auto; direction: ltr;"><canvas
+                        class="canvasjs-chart-canvas" width="520" height="520"
+                        style="width: 260px; height: 260px; position: absolute; user-select: none;"></canvas><canvas
+                        class="canvasjs-chart-canvas" width="520" height="520"
+                        style="width: 260px; height: 260px; position: absolute; -webkit-tap-highlight-color: transparent; user-select: none;"></canvas>
+                      <div class="canvasjs-chart-toolbar"
+                        style="position: absolute; right: 1px; top: 1px; border: 1px solid transparent;"></div>
+                      <div class="canvasjs-chart-tooltip"
+                        style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 2px; z-index: 1000; pointer-events: none; display: none; border-radius: 5px;">
+                        <div
+                          style=" width: auto;height: auto;min-width: 50px;line-height: auto;margin: 0px 0px 0px 0px;padding: 5px;font-family: Calibri, Arial, Georgia, serif;font-weight: normal;font-style: italic;font-size: 14px;color: #000000;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);text-align: left;border: 2px solid gray;background: rgba(255,255,255,.9);text-indent: 0px;white-space: nowrap;border-radius: 5px;-moz-user-select:none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;} ">
+                          Sample Tooltip</div>
+                      </div><a class="canvasjs-chart-credit" title="JavaScript Charts"
+                        style="outline:none;margin:0px;position:absolute;right:2px;top:246px;color:dimgrey;text-decoration:none;font-size:11px;font-family: Calibri, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif"
+                        tabindex="-1" target="_blank" href="https://canvasjs.com/">CanvasJS.com</a>
+                    </div>
+                  </div>
+                  <div id="taho-overlay">
+                    <div class="taho-overlay-onchart-digit" style="top:240px; left:49px;">1</div>
+                    <div class="taho-overlay-onchart-digit" style="top:135px; left: -4px;">179</div>
+                    <div class="taho-overlay-onchart-digit" style="top: 27px;left: 216px;">623</div>
+                    <div class="taho-overlay-onchart-digit" style="    top: 195px; left: 272px;">912</div>
+                    <div class="taho-overlay-onchart-digit" style="top: 241px;left: 242px;">999</div>
+                    <div id="taho-overlay-main-digit">100</div>
+                    <div id="taho-overlay-description">МИНИМУМ <img src="images/attention.svg" alt=""></div>
+                  </div>
+                </div>
+                <input id="tahometerval" name="tahometerval" value="320" style="display:none;">
+
+              </div>
+            </div><!-- /.lkpkr__score -->
+            <div class="clearfix"></div>
+            <div class="tahometer__update">
+              <a href="" class="link_blue">
+                <img src="img/circle-arrow.svg" alt=""><span>обновить</span>
+              </a>
+              <div class="tahometer__time">
+                Значение рейтинга на <span>19.11.2021 15:43 </span>
+              </div>
+            </div><!-- /.tahometer__update -->
+          </div><!-- /.lkpkr__dynamic -->
+        </div><!-- /.lkpkr -->
+      </div><!-- /.card -->
+
+    </div><!-- /.container -->
+  </section>
+
+  <section>
+    <div class="container">
+
+
+      <div class="defaultcol defaultcol_2cols">
+        <div class="defaultcol__content">
+          <div class="listblock__list">
+            <ul class="listblock__green">
+              <div class="row">
+                <div class="col-md-6">
+                  <li>ПКР носит информационный характер, может не использоваться кредитором при принятии решения о
+                    выдаче
+                    кредита, высокое значение ПКР не является гарантией одобрения кредита.</li>
+                  <li>Значение ПКР может меняться в зависимости от состава кредитной истории и происходящих в ней
+                    изменений.
+                  </li>
+
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <li>Значение ПКР в разных бюро кредитных историй может отличаться, так как состав информации в
+                    кредитной
+                    истории и методики вычисления индивидуального рейтинга в разных БКИ может быть различным. </li>
+                  <li>Присвоенные разными кредиторами оценки (скоринговые баллы) не могут сравниваться с ПКР, т.к. имеют
+                    иную
+                    методику расчета и данные.</li>
+
+                </div><!-- /.col-md-6 -->
+              </div><!-- /.row -->
+
+
+
+
+            </ul>
+          </div>
+        </div><!-- /.defaultcol__content -->
+      </div><!-- /.defaultcol -->
+    </div><!-- /.container -->
+  </section>
+
+
+  <section class="offerscontent">
+    <div class="container">
+      <div class="navpages navpages_noborder">
+        <ul class="navpages__list">
+          <li class="active"><a href="#">Кредиты</a></li>
+          <li><a href="#">Ипотека</a></li>
+          <li><a href="#">Кредитные карты</a></li>
+          <li><a href="#">Микрозаймы</a></li>
+          <li><a href="#">Рефинансирование</a></li>
+          <li><a href="#">Автокредит</a></li>
+
+        </ul>
+      </div>
+      <div class="cards cards_type2">
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__top">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/offer4.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__details">
+                    <div class="serv__detail serv_detail1">
+                      <div class="serv__derailname">Азиатско Тихоокеанский...</div>
+                      <div class="serv__detailinfo">лиц. №705</div>
+                    </div>
+                    <div class="serv__detail serv_detail2">
+                      <div class="serv__derailname">Кредит
+                        наличными</div>
+                      <div class="serv__detailinfo">кредит наличными</div>
+                    </div>
+                    <div class="serv__detail serv_detail3">
+                      <div class="serv__derailname">до 15 млн ₽</div>
+                      <div class="serv__detailinfo">сумма</div>
+                    </div>
+                    <div class="serv__detail serv_detail4">
+                      <div class="serv__derailname">от 5,5%</div>
+                      <div class="serv__detailinfo">ставка</div>
+                    </div>
+                    <div class="serv__detail serv_detail5">
+                      <div class="serv__derailname">от 24 мес.</div>
+                      <div class="serv__detailinfo">срок</div>
+                    </div>
+                    <div class="serv__toggle onlyMobile">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                  </div><!-- /.serv__details -->
+                  <div class="serv__hidden">
+                    <div class="tabs">
+                      <div class="tabs__header navpages navpages_noborder">
+                        <ul class="navpages__list">
+                          <li class="active"> Условия</li>
+                          <li>Требования к заемщику</li>
+                          <li>Дополнительно</li>
+                        </ul> <!-- /.navpages -->
+                      </div><!-- /.tabs__header -->
+                      <div class="tabs__wrapper">
+                        <div class="tabs__content active">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+                              <tr>
+                                <td>Срок/льготный период</td>
+                                <td>1–7 лет</td>
+                              </tr>
+                              <tr>
+                                <td>Страхование</td>
+                                <td>личное (не обязательно)</td>
+                              </tr>
+                              <tr>
+                                <td>Комисии</td>
+                                <td>без комиссии</td>
+                              </tr>
+                              <tr>
+                                <td>Досрочное погашение</td>
+                                <td>с 1-го месяца</td>
+                              </tr>
+                              <tr>
+                                <td>Получение</td>
+                                <td>онлайн, оффлайн</td>
+                              </tr>
+                              <tr>
+                                <td>Способы погашения</td>
+                                <td>мобильное приложение, банкомат, касса</td>
+                              </tr>
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                            </table>
+                          </div> <!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                      </div><!-- /.tabs__wrapper -->
+                    </div><!-- /.tabs -->
+                  </div><!-- /.serv__hidden -->
+                  <div class="serv__bottom">
+                    <div class="serv__toggle onlyDesktop">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                    <div class="serv__button">
+                      <a href="" class="btn_main">Подать заявку</a>
+                    </div><!-- /.serv__button -->
+                  </div>
+
+                </div><!-- /.serv__main -->
+
+
+              </div>
+
+
+            </div><!-- /.serv__content -->
+
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__top">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/offer5.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__details">
+                    <div class="serv__detail serv_detail1">
+                      <div class="serv__derailname">СКБ Банк </div>
+                      <div class="serv__detailinfo">лиц. №705</div>
+                    </div>
+                    <div class="serv__detail serv_detail2">
+                      <div class="serv__derailname">Кредит
+                        «Запросто»</div>
+                      <div class="serv__detailinfo">кредит наличными</div>
+                    </div>
+                    <div class="serv__detail serv_detail3">
+                      <div class="serv__derailname">до 1,55 млн ₽</div>
+                      <div class="serv__detailinfo">сумма</div>
+                    </div>
+                    <div class="serv__detail serv_detail4">
+                      <div class="serv__derailname">от 6,1%</div>
+                      <div class="serv__detailinfo">ставка</div>
+                    </div>
+                    <div class="serv__detail serv_detail5">
+                      <div class="serv__derailname">от 36 мес.</div>
+                      <div class="serv__detailinfo">срок</div>
+                    </div>
+                    <div class="serv__toggle onlyMobile">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                  </div><!-- /.serv__details -->
+                  <div class="serv__hidden" style="display: block;">
+                    <div class="tabs">
+                      <div class="tabs__header navpages navpages_noborder">
+                        <ul class="navpages__list">
+                          <li class="active"> Условия</li>
+                          <li>Требования к заемщику</li>
+                          <li>Дополнительно</li>
+                        </ul> <!-- /.navpages -->
+                      </div><!-- /.tabs__header -->
+                      <div class="tabs__wrapper">
+                        <div class="tabs__content active">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+                              <tr>
+                                <td>Срок/льготный период</td>
+                                <td>1–7 лет</td>
+                              </tr>
+                              <tr>
+                                <td>Страхование</td>
+                                <td>личное (не обязательно)</td>
+                              </tr>
+                              <tr>
+                                <td>Комисии</td>
+                                <td>без комиссии</td>
+                              </tr>
+                              <tr>
+                                <td>Досрочное погашение</td>
+                                <td>с 1-го месяца</td>
+                              </tr>
+                              <tr>
+                                <td>Получение</td>
+                                <td>онлайн, оффлайн</td>
+                              </tr>
+                              <tr>
+                                <td>Способы погашения</td>
+                                <td>мобильное приложение, банкомат, касса</td>
+                              </tr>
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма
+                                </td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+
+
+                            </table>
+                          </div>
+                          <!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                      </div><!-- /.tabs__wrapper -->
+                    </div><!-- /.tabs -->
+                  </div><!-- /.serv__hidden -->
+                  <div class="serv__bottom">
+                    <div class="serv__toggle onlyDesktop">
+                      <a href="" class="link_blue js-toggle active">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                    <div class="serv__button">
+                      <a href="" class="btn_main">Подать заявку</a>
+                    </div><!-- /.serv__button -->
+                  </div>
+
+                </div><!-- /.serv__main -->
+
+
+              </div>
+
+
+            </div><!-- /.serv__content -->
+
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__top">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/offer6.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__details">
+                    <div class="serv__detail serv_detail1">
+                      <div class="serv__derailname">Райффайзен банк</div>
+                      <div class="serv__detailinfo">лиц. №705</div>
+                    </div>
+                    <div class="serv__detail serv_detail2">
+                      <div class="serv__derailname">На любые
+                        цели</div>
+                      <div class="serv__detailinfo">кредит наличными</div>
+                    </div>
+                    <div class="serv__detail serv_detail3">
+                      <div class="serv__derailname">до 3 млн ₽ </div>
+                      <div class="serv__detailinfo">сумма</div>
+                    </div>
+                    <div class="serv__detail serv_detail4">
+                      <div class="serv__derailname">от 4,99%</div>
+                      <div class="serv__detailinfo">ставка</div>
+                    </div>
+                    <div class="serv__detail serv_detail5">
+                      <div class="serv__derailname">от 36 мес.</div>
+                      <div class="serv__detailinfo">срок</div>
+                    </div>
+                    <div class="serv__toggle onlyMobile">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                  </div><!-- /.serv__details -->
+                  <div class="serv__hidden">
+                    <div class="tabs">
+                      <div class="tabs__header navpages navpages_noborder">
+                        <ul class="navpages__list">
+                          <li class="active"> Условия</li>
+                          <li>Требования к заемщику</li>
+                          <li>Дополнительно</li>
+                        </ul> <!-- /.navpages -->
+                      </div><!-- /.tabs__header -->
+                      <div class="tabs__wrapper ">
+                        <div class="tabs__content active">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+                              <tr>
+                                <td>Срок/льготный период</td>
+                                <td>1–7 лет</td>
+                              </tr>
+                              <tr>
+                                <td>Страхование</td>
+                                <td>личное (не обязательно)</td>
+                              </tr>
+                              <tr>
+                                <td>Комисии</td>
+                                <td>без комиссии</td>
+                              </tr>
+                              <tr>
+                                <td>Досрочное погашение</td>
+                                <td>с 1-го месяца</td>
+                              </tr>
+                              <tr>
+                                <td>Получение</td>
+                                <td>онлайн, оффлайн</td>
+                              </tr>
+                              <tr>
+                                <td>Способы погашения</td>
+                                <td>мобильное приложение, банкомат, касса</td>
+                              </tr>
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+
+
+                            </table>
+                          </div>
+                          <!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                      </div><!-- /.tabs__wrapper -->
+                    </div><!-- /.tabs -->
+                  </div><!-- /.serv__hidden -->
+                  <div class="serv__bottom">
+                    <div class="serv__toggle onlyDesktop">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                    <div class="serv__button">
+                      <a href="" class="btn_main">Подать заявку</a>
+                    </div><!-- /.serv__button -->
+                  </div>
+
+                </div><!-- /.serv__main -->
+
+
+              </div>
+
+
+            </div><!-- /.serv__content -->
+
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__top">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/offer7.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__details">
+                    <div class="serv__detail serv_detail1">
+                      <div class="serv__derailname">Совкомбанк</div>
+                      <div class="serv__detailinfo">лиц. №705</div>
+                    </div>
+                    <div class="serv__detail serv_detail2">
+                      <div class="serv__derailname">Кредит наличными</div>
+                      <div class="serv__detailinfo">кредит наличными</div>
+                    </div>
+                    <div class="serv__detail serv_detail3">
+                      <div class="serv__derailname">до 1 млн ₽</div>
+                      <div class="serv__detailinfo">сумма</div>
+                    </div>
+                    <div class="serv__detail serv_detail4">
+                      <div class="serv__derailname">от 0%</div>
+                      <div class="serv__detailinfo">ставка</div>
+                    </div>
+                    <div class="serv__detail serv_detail5">
+                      <div class="serv__derailname">от 24 мес.</div>
+                      <div class="serv__detailinfo">срок</div>
+                    </div>
+                    <div class="serv__toggle onlyMobile">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                  </div><!-- /.serv__details -->
+                  <div class="serv__hidden">
+                    <div class="tabs">
+                      <div class="tabs__header navpages navpages_noborder">
+                        <ul class="navpages__list">
+                          <li class="active"> Условия</li>
+                          <li>Требования к заемщику</li>
+                          <li>Дополнительно</li>
+                        </ul> <!-- /.navpages -->
+                      </div><!-- /.tabs__header -->
+                      <div class="tabs__wrapper ">
+                        <div class="tabs__content active">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+                              <tr>
+                                <td>Срок/льготный период</td>
+                                <td>1–7 лет</td>
+                              </tr>
+                              <tr>
+                                <td>Страхование</td>
+                                <td>личное (не обязательно)</td>
+                              </tr>
+                              <tr>
+                                <td>Комисии</td>
+                                <td>без комиссии</td>
+                              </tr>
+                              <tr>
+                                <td>Досрочное погашение</td>
+                                <td>с 1-го месяца</td>
+                              </tr>
+                              <tr>
+                                <td>Получение</td>
+                                <td>онлайн, оффлайн</td>
+                              </tr>
+                              <tr>
+                                <td>Способы погашения</td>
+                                <td>мобильное приложение, банкомат, касса</td>
+                              </tr>
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+
+
+                            </table>
+                          </div>
+                          <!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                      </div><!-- /.tabs__wrapper -->
+                    </div><!-- /.tabs -->
+                  </div><!-- /.serv__hidden -->
+                  <div class="serv__bottom">
+                    <div class="serv__toggle onlyDesktop">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                    <div class="serv__button">
+                      <a href="" class="btn_main">Подать заявку</a>
+                    </div><!-- /.serv__button -->
+                  </div>
+
+                </div><!-- /.serv__main -->
+
+
+              </div>
+
+
+            </div><!-- /.serv__content -->
+
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__top">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/offer8.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__details">
+                    <div class="serv__detail serv_detail1">
+                      <div class="serv__derailname">УБРиР</div>
+                      <div class="serv__detailinfo">лиц. №705</div>
+                    </div>
+                    <div class="serv__detail serv_detail2">
+                      <div class="serv__derailname">Кредит «Мой выбор!»</div>
+                      <div class="serv__detailinfo">кредит наличными</div>
+                    </div>
+                    <div class="serv__detail serv_detail3">
+                      <div class="serv__derailname">до 5 млн ₽</div>
+                      <div class="serv__detailinfo">сумма</div>
+                    </div>
+                    <div class="serv__detail serv_detail4">
+                      <div class="serv__derailname">от 4,9%</div>
+                      <div class="serv__detailinfo">ставка</div>
+                    </div>
+                    <div class="serv__detail serv_detail5">
+                      <div class="serv__derailname">от 24 мес.</div>
+                      <div class="serv__detailinfo">срок</div>
+                    </div>
+                    <div class="serv__toggle onlyMobile">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                  </div><!-- /.serv__details -->
+                  <div class="serv__hidden">
+                    <div class="tabs">
+                      <div class="tabs__header navpages navpages_noborder">
+                        <ul class="navpages__list">
+                          <li class="active"> Условия</li>
+                          <li>Требования к заемщику</li>
+                          <li>Дополнительно</li>
+                        </ul> <!-- /.navpages -->
+                      </div><!-- /.tabs__header -->
+                      <div class="tabs__wrapper ">
+                        <div class="tabs__content active">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+                              <tr>
+                                <td>Срок/льготный период</td>
+                                <td>1–7 лет</td>
+                              </tr>
+                              <tr>
+                                <td>Страхование</td>
+                                <td>личное (не обязательно)</td>
+                              </tr>
+                              <tr>
+                                <td>Комисии</td>
+                                <td>без комиссии</td>
+                              </tr>
+                              <tr>
+                                <td>Досрочное погашение</td>
+                                <td>с 1-го месяца</td>
+                              </tr>
+                              <tr>
+                                <td>Получение</td>
+                                <td>онлайн, оффлайн</td>
+                              </tr>
+                              <tr>
+                                <td>Способы погашения</td>
+                                <td>мобильное приложение, банкомат, касса</td>
+                              </tr>
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+                              <tr>
+                                <td>Ставка</td>
+                                <td>5–45%</td>
+                              </tr>
+
+                            </table>
+                          </div><!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                        <div class="tabs__content">
+                          <div class="lktable">
+                            <table cellspacing="0">
+                              <tr>
+                                <td>Сумма</td>
+                                <td>30 000–5 000 000 ₽</td>
+                              </tr>
+
+
+                            </table>
+                          </div>
+                          <!-- /.lktable -->
+                        </div><!-- /.tabs__content -->
+                      </div><!-- /.tabs__wrapper -->
+                    </div><!-- /.tabs -->
+                  </div><!-- /.serv__hidden -->
+                  <div class="serv__bottom">
+                    <div class="serv__toggle onlyDesktop">
+                      <a href="" class="link_blue js-toggle">Подробнее</a>
+                    </div><!-- /.serv__date -->
+                    <div class="serv__button">
+                      <a href="" class="btn_main">Подать заявку</a>
+                    </div><!-- /.serv__button -->
+                  </div>
+
+                </div><!-- /.serv__main -->
+
+
+              </div>
+
+
+            </div><!-- /.serv__content -->
+
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+
+
+
+      </div><!-- /.cards -->
+
+    </div><!-- /.container -->
+  </section>
+
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

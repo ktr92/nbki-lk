@@ -1,0 +1,245 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><a href=""><span>Услуги</span></a></li>
+        <li><span>ПКР</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li class="active"><a href="#">Обзор</a></li>
+        <li><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li><a href="#">Кредитные предложения</a></li>
+
+      </ul>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+
+      <div class="card card_lkpkr card_lkpkr_default">
+        <div class="lkpkr lkpkr_type3 dflex lkpkr_reverse">
+          <div class="lkpkr__left">
+            <div class="lkpkr__content">
+              <div class="lkpkr__title">Персональный кредитный рейтинг</div>
+
+              <div class="getserv getserv_prk onlyMobile">
+                <div class="getserv__img">
+                  <img src="img/diagram-05.png" alt="">
+                  <div class="getserv__value">
+                    ?
+                  </div><!-- /.getserv__value -->
+                </div>
+                <div class="getserv__buttons">
+                  <div class="getserv__button"><a href="" class="btn_main btn_main_default">Получить бесплатно</a>
+                  </div>
+                </div>
+              </div>
+              <div class="lkpkr__text">
+                <p>ПКР — это оценка вашей кредитоспособности, вычисленная НБКИ на основе методики, требования к которой
+                  устанавливаются Банком России.</p>
+                <p></p> Чем выше рейтинг, тем выше ваши шансы на получение нового кредита.</p>
+
+              </div>
+
+              <!--  <div class="smallinfo">
+                <img src="img/attention.svg" alt="">
+                <span>
+                  Персональный кредитный рейтинг не может быть расчитан для пользователей, чья кредитная история не
+                  найдена в базе или недостаточно информативна (мало данных или они противоречивы
+                </span>
+
+              </div>
+ -->
+              <ul class="pkrvalue-params pkrvalue-params_score">
+                <li class="pkrvalue-params_head">
+                  <span class="pkrvalue-params_left">
+                    <span><span>Кредитоспособность</span></span>
+                  </span>
+                  <span class="pkrvalue-params_right pkrvalue-params_right_score">
+                    <span>Диапазон ПКР</span>
+                  </span>
+                </li>
+
+
+                <li>
+                  <span class="pkrvalue-params_left">
+                    <span><span>Низкая</span></span>
+                  </span>
+                  <span class="pkrvalue-params_right pkrvalue-params_right_score "><span
+                      class="pkrvalue-params_right_score-red">1–179</span></span>
+                </li>
+
+                <li>
+                  <span class="pkrvalue-params_left">
+                    <span><span>Средняя</span></span>
+                  </span>
+                  <span class="pkrvalue-params_right  pkrvalue-params_right_score"><span
+                      class="pkrvalue-params_right_score-yellow">180–623</span></span>
+                </li>
+
+                <li>
+                  <span class="pkrvalue-params_left">
+                    <span><span>Высокая</span></span>
+                  </span>
+                  <span class="pkrvalue-params_right  pkrvalue-params_right_score"><span
+                      class="pkrvalue-params_right_score-lgreen">624–912</span></span>
+                </li>
+
+
+                <li>
+                  <span class="pkrvalue-params_left">
+                    <span><span>Очень высокая</span></span>
+                  </span>
+                  <span class="pkrvalue-params_right  pkrvalue-params_right_score"><span
+                      class="pkrvalue-params_right_score-green">913–999</span></span>
+                </li>
+
+
+              </ul>
+
+              <div class="lkpkr__text lkpkr__text_small">
+                <p>Значение рейтинга зависит от разнообразия имеющихся у вас кредитов, истории платежей (отсутствия
+                  просрочек), долговой нагрузки, срока кредитной истории и других данных КИ.</p>
+
+              </div>
+
+            </div>
+          </div><!-- /.lkpkr__left -->
+          <div class="lkprk__right">
+            <div class="getserv getserv_prk getserv_prk-score onlyDesktop">
+              <div class="getserv__img">
+                <!--  <img src="img/diagram-05.svg" alt=""> -->
+                <img src="img/diagram-05.png" alt="">
+                <div class="getserv__value">
+                  ?
+                </div><!-- /.getserv__value -->
+              </div>
+              <div class="getserv__buttons">
+                <div class="getserv__button getserv__button_score"><a href=""
+                    class="btn_main btn_main_default   ">Получить
+                    бесплатно</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>ПКР помогает</h2>
+
+
+      <div class="lkgrid lkgrid_type32 lkgrid_type322  lkgrid_wrap">
+        <div class="lkgrid__items lkgrid__items_wrap">
+          <div class="lkgrid__item ">
+            <div class="card card_default">
+              <div class="lkservice lkservice_short">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_blue round_border"></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_small">Найти короткий путь к своему кредитору</div>
+                  <!-- /.lkservice__title -->
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+          <div class="lkgrid__item ">
+            <div class="card card_default">
+              <div class="lkservice lkservice_short">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_blue "></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_small">Оценить шансы на одобрение нового кредита</div>
+                  <!-- /.lkservice__title -->
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+          <div class="lkgrid__item ">
+            <div class="card card_default">
+              <div class="lkservice lkservice_short">
+                <div class="lkservice__content">
+                  <div class="lkservice__icon">
+                    <span class="round round_red"></span>
+                  </div>
+                  <div class="lkservice__name lkservice__name_small">Получить специальные предложения и бонусы</div>
+                  <!-- /.lkservice__title -->
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+
+
+        </div><!-- /.lkgrid__items -->
+      </div><!-- /.lkgrid -->
+
+    </div><!-- /.container -->
+  </section>
+
+
+  <section>
+    <div class="container">
+
+
+      <div class="defaultcol defaultcol_2cols">
+        <div class="defaultcol__content">
+          <div class="listblock__list">
+            <ul class="listblock__green">
+              <div class="row">
+                <div class="col-md-6">
+                  <li>ПКР носит информационный характер, может не использоваться кредитором при принятии решения о
+                    выдаче
+                    кредита, высокое значение ПКР не является гарантией одобрения кредита.</li>
+                  <li>Значение ПКР может меняться в зависимости от состава кредитной истории и происходящих в ней
+                    изменений.
+                  </li>
+                  <li>Значение ПКР в разных бюро кредитных историй может отличаться, так как состав информации в
+                    кредитной
+                    истории и методики вычисления индивидуального рейтинга в разных БКИ может быть различным. </li>
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <li>Присвоенные разными кредиторами оценки (скоринговые баллы) не могут сравниваться с ПКР, т.к. имеют
+                    иную
+                    методику расчета и данные.</li>
+                  <li>Персональный кредитный рейтинг не может быть рассчитан для пользователей, чья кредитная история не
+                    найдена в базе или не содержит данных о кредитах.</li>
+                </div><!-- /.col-md-6 -->
+              </div><!-- /.row -->
+
+
+
+
+            </ul>
+          </div>
+        </div><!-- /.defaultcol__content -->
+      </div><!-- /.defaultcol -->
+    </div><!-- /.container -->
+  </section>
+
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

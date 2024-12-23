@@ -1,0 +1,44 @@
+@import 'params.scss';
+
+@mixin container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+@mixin clear {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin clear-list {
+  @include clear;
+  list-style: none;
+}
+
+
+@mixin large-screen() {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin medium-screen() {
+  @media only screen and (max-width: 999px) {
+    @content;
+  }
+}
+
+
+@mixin small-screen() {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin extrasmall-screen() {
+  @media only screen and (max-width: 410px) {
+    @content;
+  }
+}

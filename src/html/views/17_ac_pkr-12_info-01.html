@@ -1,0 +1,225 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><a href=""><span>Услуги</span></a></li>
+        <li><span>ПКР 12</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li><a href="#">Обзор</a></li>
+        <li><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <section>
+    <div class="container">
+      <div class="card card_graph">
+        <div class="cardcontent">
+
+
+          <h1>ПКР 12 — Динамика изменения ПКР
+          </h1>
+
+          <div class="text text-big">
+            <p>На этой странице отображена динамика вашего Персонального кредитного рейтинга (ПКР) помесячно за
+              последние
+              12 месяцев</p>
+          </div>
+
+        </div>
+
+        <div class="pkrnav">
+          <div class="pkrnav__items">
+            <div class="pkrnav__item active">
+              <div class="pkrnav__icon">
+                <a href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="#AEB5D1" stroke-width="2" />
+                    <path d="M7.83203 17L7.83203 13" stroke="#AEB5D1" stroke-width="2" stroke-linecap="round" />
+                    <path d="M12 17L12 7" stroke="#AEB5D1" stroke-width="2" stroke-linecap="round" />
+                    <path d="M16.1641 17.0007L16.1641 10.334" stroke="#AEB5D1" stroke-width="2"
+                      stroke-linecap="round" />
+                  </svg>
+                </a>
+              </div>
+            </div><!-- /.pkrnav__item -->
+
+            <div class="pkrnav__item">
+              <div class="pkrnav__icon">
+                <a href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="#AEB5D1" stroke-width="2" />
+                    <path
+                      d="M6.10754 16.5489C5.85839 17.0418 6.05598 17.6433 6.54887 17.8925C7.04176 18.1416 7.6433 17.944 7.89246 17.4511L6.10754 16.5489ZM10.0769 10.913L10.8932 10.3354C10.6906 10.0491 10.3528 9.88987 10.0031 9.91577C9.65331 9.94167 9.34269 10.1489 9.18447 10.4619L10.0769 10.913ZM13.1538 15.2609L12.3376 15.8385C12.5435 16.1295 12.8888 16.2889 13.2438 16.2568C13.5988 16.2248 13.9099 16.0061 14.0604 15.683L13.1538 15.2609ZM17.9066 7.42208C18.1397 6.9214 17.9228 6.32655 17.4221 6.09344C16.9214 5.86033 16.3266 6.07724 16.0934 6.57792L17.9066 7.42208ZM7.89246 17.4511L10.9694 11.3642L9.18447 10.4619L6.10754 16.5489L7.89246 17.4511ZM9.26065 11.4907L12.3376 15.8385L13.9701 14.6832L10.8932 10.3354L9.26065 11.4907ZM14.0604 15.683L17.9066 7.42208L16.0934 6.57792L12.2473 14.8388L14.0604 15.683Z"
+                      fill="#AEB5D1" />
+                  </svg>
+
+                </a>
+              </div>
+            </div><!-- /.pkrnav__item -->
+            <div class="pkrnav__item">
+              <div class="pkrnav__icon">
+                <a href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="#AEB5D1" stroke-width="2" />
+                    <path d="M7 8H17" stroke="#AEB5D1" stroke-width="2" stroke-linecap="round" />
+                    <path d="M7 12H17" stroke="#AEB5D1" stroke-width="2" stroke-linecap="round" />
+                    <path d="M7 16H11" stroke="#AEB5D1" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+
+                </a>
+              </div>
+            </div><!-- /.pkrnav__item -->
+
+          </div><!-- /.pkrnav__items -->
+        </div><!-- /.pkrnav -->
+
+        <div class="table-bars">
+          <table class="q-graph">
+            <tbody>
+              <tr class="qtr" style="left: 30px;">
+                <th scope="row">Январь</th>
+                <td class="sent bar" style="height: 57%;">
+                  <p>588</p>
+
+                  </td>
+        </tr>
+        <tr class="qtr" style="">
+          <th scope="row">Февраль</th>
+          <td class="sent bar" style="height: 64%;">
+            <p>636</p>
+
+            </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Март</th>
+        <td class="sent bar" style="height: 68%;">
+          <p>660</p>
+
+        </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Апрель</th>
+        <td class="sent bar" style="height: 65%;">
+          <p>648</p>
+
+        </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Май</th>
+        <td class="sent bar" style="height: 78%;">
+          <p>715</p>
+
+        </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Июнь</th>
+        <td class="sent bar" style="height: 80%;">
+          <p>735</p>
+
+        </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Июль</th>
+        <td class="sent bar" style="height: 88.5%;">
+          <p>798</p>
+
+        </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Август</th>
+        <td class="sent bar" style="height: 85%;">
+          <p>760</p>
+
+        </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Сентябрь</th>
+        <td class="sent bar" style="height: 87%;">
+          <p>770</p>
+
+        </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Октябрь</th>
+        <td class="sent bar" style="height: 85%">
+          <p>759</p>
+
+        </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Ноябрь</th>
+        <td class="sent bar" style="height: 73%;">
+          <p>670</p>
+
+        </td>
+      </tr>
+      <tr class="qtr" style="">
+        <th scope="row">Декабрь</th>
+        <td class="sent bar" style="height: 64%;">
+          <p>635</p>
+
+        </td>
+      </tr>
+      </tbody>
+      </table>
+      <div class="ticks">
+
+        <div class="tick" style="height: 51px;">
+          <p>800</p>
+        </div>
+
+        <div class="tick" style="height: 51px;">
+          <p>700</p>
+        </div>
+
+        <div class="tick" style="height: 51px;">
+          <p>600</p>
+        </div>
+
+        <div class="tick" style="height: 51px;">
+          <p>500</p>
+        </div>
+
+        <div class="tick" style="height: 51px;">
+          <p>400</p>
+        </div>
+
+        <div class="tick" style="height: 51px;">
+          <p>300</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="smalltext">Обращаем ваше внимание, что единичный ПКР, рассчитывается на текущий момент времени, а
+      историческая
+      динамика ПКР (ПКР 12) на фиксированную дату внутри каждого из этих месяцев. В связи с чем значения ПКР внутри
+      одного и того же месяца могут меняться.
+    </div>
+    </div><!-- /.card -->
+    </div><!-- /.container -->
+  </section>
+
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

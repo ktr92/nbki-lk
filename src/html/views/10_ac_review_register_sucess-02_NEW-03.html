@@ -1,0 +1,561 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><span>Обзор</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li class="active"><a href="#">Обзор</a></li>
+        <li><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+
+      <div class="lkgrid">
+        <div class="lkgrid__items lkgrid__items_two">
+          <div class="lkgrid__item lkgrid__item_small">
+            <div class="card card_blue">
+              <div class="lkbanner">
+                <div class="lkbanner__content"><a href="">
+                    <div class="lkbanner__image">
+                      <img src="img/protect.svg" alt="">
+                    </div>
+                    <div class="lkbanner__title">Защита от мошенничества</div>
+                    <div class="lkbanner__text">Годовая подписка на уведомления о подозрительных изменениях в кредитоной
+                      истории</div>
+                    <div class="lkbanner__link">Подробнее</div>
+                  </a></div><!-- /.lkbanner__content -->
+              </div><!-- /.lkbanner -->
+            </div><!-- /.card card_blue -->
+          </div><!-- /.lkgrid__item lkgrid__item_small -->
+          <div class="lkgrid__item lkgrid__item_large">
+            <div class="card">
+              <div class="lkpkr">
+                <div class="lkpkr__content">
+                  <div class="lkpkr__static">
+                    <div class="lkpkr__title">Мой ПКР</div>
+                    <div class="lkpkr__text">Рейтинг оставляет не так много возможностей для привлечения кредитов.
+                    </div>
+                    <div class="lkpkr__link"><a href="" class="link_blue">Подробнее</a></div>
+                    <div class="lkpkr__socials">
+                      <div class="socials">
+                        <div class="socials__items">
+                          <div class="socials__item">
+
+                            <a href="https://vk.com/public189456417">
+                              <img src="img/vk.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="socials__item">
+                            <a href="https://www.youtube.com/channel/UC-quFSK5Vpq23UOogbUcSUg" rel="nofollow"
+                              target="_blank">
+                              <img src="img/YouTube.svg" alt="">
+                            </a>
+                          </div>
+
+                          <div class="socials__item">
+                            <a href="https://www.instagram.com/nbki_official/" rel="nofollow" target="_blank">
+                              <img src="img/Instagram.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="socials__item">
+                            <a href="https://www.facebook.com/nbki.ru/" rel="nofollow" target="_blank"> <img
+                                src="img/Facebook.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="socials__item">
+                            <a href="https://ok.ru/group/57783371890929" rel="nofollow" target="_blank"> <img
+                                src="img/ok.svg" alt="">
+                            </a>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div><!-- /.lkpkr__content -->
+                  </div><!-- /.lkpkr__socials -->
+                </div><!-- /.lkpkr__static -->
+                <div class="lkpkr__dynamic">
+                  <div class="lkpkr__score">
+                    <!--  <div class="tahometerblock">
+                      <div class="tahometer">
+
+                      
+                        <div class="tahometer__str"><img src="img/pkr-current.svg" alt=""
+                            style="transform: rotate(20deg);"></div>
+                      </div>
+                      <div class="tahometer__rating">
+                        <div class="tahometer__value">320</div>
+
+
+                      </div>
+                      <div class="tahometer__label">
+                        <div class="tahometer__scale tahometer__scale_start">300</div>
+                        <div class="tahometer__text">низкий</div>
+                        <div class="tahometer__scale tahometer__scale_end">850</div>
+                      </div>
+                      <div class="tahometer__info">
+                        Вероятность одобрения <br> нового кредита 15%
+                      </div>
+
+                    </div> -->
+                    <div class="tahometerblock">
+                      <span class="white1"></span>
+                      <span class="white2"></span>
+
+                      <div id="taho-container">
+                        <div id="taho-chartContainer">
+                          <div class="canvasjs-chart-container"
+                            style="position: relative; text-align: left; cursor: auto; direction: ltr;"><canvas
+                              class="canvasjs-chart-canvas" width="800" height="600"
+                              style="width: 400px; height: 300px; position: absolute; user-select: none;"></canvas><canvas
+                              class="canvasjs-chart-canvas" width="800" height="600"
+                              style="width: 400px; height: 300px; position: absolute; -webkit-tap-highlight-color: transparent; user-select: none;"></canvas>
+                            <div class="canvasjs-chart-toolbar"
+                              style="position: absolute; right: 1px; top: 1px; border: 1px solid transparent;"></div>
+                            <div class="canvasjs-chart-tooltip"
+                              style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 2px; z-index: 1000; pointer-events: none; display: none; border-radius: 5px;">
+                              <div
+                                style=" width: auto;height: auto;min-width: 50px;line-height: auto;margin: 0px 0px 0px 0px;padding: 5px;font-family: Calibri, Arial, Georgia, serif;font-weight: normal;font-style: italic;font-size: 14px;color: #000000;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);text-align: left;border: 2px solid gray;background: rgba(255,255,255,.9);text-indent: 0px;white-space: nowrap;border-radius: 5px;-moz-user-select:none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;} ">
+                                Sample Tooltip</div>
+                            </div><a class="canvasjs-chart-credit" title="JavaScript Charts"
+                              style="outline:none;margin:0px;position:absolute;right:2px;top:286px;color:dimgrey;text-decoration:none;font-size:11px;font-family: Calibri, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif"
+                              tabindex="-1" target="_blank" href="https://canvasjs.com/">CanvasJS.com</a>
+                          </div>
+                        </div>
+                        <div id="taho-overlay-chart-two">
+                          <div class="canvasjs-chart-container"
+                            style="position: relative; text-align: left; cursor: auto; direction: ltr;"><canvas
+                              class="canvasjs-chart-canvas" width="520" height="520"
+                              style="width: 260px; height: 260px; position: absolute; user-select: none;"></canvas><canvas
+                              class="canvasjs-chart-canvas" width="520" height="520"
+                              style="width: 260px; height: 260px; position: absolute; -webkit-tap-highlight-color: transparent; user-select: none;"></canvas>
+                            <div class="canvasjs-chart-toolbar"
+                              style="position: absolute; right: 1px; top: 1px; border: 1px solid transparent;"></div>
+                            <div class="canvasjs-chart-tooltip"
+                              style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 2px; z-index: 1000; pointer-events: none; display: none; border-radius: 5px;">
+                              <div
+                                style=" width: auto;height: auto;min-width: 50px;line-height: auto;margin: 0px 0px 0px 0px;padding: 5px;font-family: Calibri, Arial, Georgia, serif;font-weight: normal;font-style: italic;font-size: 14px;color: #000000;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);text-align: left;border: 2px solid gray;background: rgba(255,255,255,.9);text-indent: 0px;white-space: nowrap;border-radius: 5px;-moz-user-select:none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;} ">
+                                Sample Tooltip</div>
+                            </div><a class="canvasjs-chart-credit" title="JavaScript Charts"
+                              style="outline:none;margin:0px;position:absolute;right:2px;top:246px;color:dimgrey;text-decoration:none;font-size:11px;font-family: Calibri, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif"
+                              tabindex="-1" target="_blank" href="https://canvasjs.com/">CanvasJS.com</a>
+                          </div>
+                        </div>
+                        <div id="taho-overlay">
+                          <div class="taho-overlay-onchart-digit" style="top:240px; left:49px;">1</div>
+                          <div class="taho-overlay-onchart-digit" style="top:135px; left: -4px;">179</div>
+                          <div class="taho-overlay-onchart-digit" style="top: 27px;left: 216px;">623</div>
+                          <div class="taho-overlay-onchart-digit" style="    top: 195px; left: 272px;">912</div>
+                          <div class="taho-overlay-onchart-digit" style="top: 241px;left: 242px;">999</div>
+                          <div id="taho-overlay-main-digit">100</div>
+                          <div id="taho-overlay-description">МИНИМУМ <img src="images/attention.svg" alt=""></div>
+                        </div>
+                      </div>
+                      <input id="tahometerval" name="tahometerval" value="320" style="display:none;">
+
+
+
+                    </div>
+                  </div><!-- /.lkpkr__score -->
+                  <div class="clearfix"></div>
+                  <div class="tahometer__update">
+                    <a href="" class="link_blue">
+                      <img src="img/circle-arrow.svg" alt=""><span>обновить</span>
+                    </a>
+                    <div class="tahometer__time">
+                      Значение рейтинга на <span>19.11.2021 15:43 </span>
+                    </div>
+                  </div><!-- /.tahometer__update -->
+                </div><!-- /.lkpkr__dynamic -->
+              </div><!-- /.lkpkr -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+        </div>
+      </div><!-- /.lkgrid -->
+    </div><!-- /.container -->
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Лучшие предложения</h2>
+      <div class="navpages navpages_noborder">
+        <ul class="navpages__list">
+          <li class="active"><a href="#">Кредиты</a></li>
+          <li><a href="#">Ипотека</a></li>
+          <li><a href="#">Кредитные карты</a></li>
+          <li><a href="#">Микрозаймы</a></li>
+          <li><a href="#">Рефинансирование</a></li>
+          <li><a href="#">Автокредит</a></li>
+
+        </ul>
+      </div>
+
+      <div class="lkgrid__div lkgrid__items">
+        <div class="lkgrid__item">
+          <div class="card">
+            <div class="offer">
+              <div class="offer__header">
+                <div class="offer__title">
+                  <div class="offer__name">Хоум Кредит Банк</div>
+                  <div class="offer__info">лиц. № 3292</div>
+                </div><!-- /.offer__title -->
+                <div class="offer__logo">
+                  <div class="offer__img"><img src="img/offer1.svg" alt=""></div>
+                </div>
+              </div><!-- /.offer__header -->
+              <div class="offer__main">
+                <div class="offer__params">
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">на любые цели</div>
+                    <div class="offer__paramtext2">кредит наличными</div>
+                  </div><!-- /.offer__param -->
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">до 5 000 000 ₽</div>
+                    <div class="offer__paramtext2">сумма</div>
+                  </div><!-- /.offer__param -->
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">от 5,9%</div>
+                    <div class="offer__paramtext2">ставка</div>
+                  </div><!-- /.offer__param -->
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">до 7-ми лет</div>
+                    <div class="offer__paramtext2">срок</div>
+                  </div><!-- /.offer__param -->
+                </div><!-- /.offer__params -->
+              </div><!-- /.offer__main -->
+              <div class="offer__buttons card__buttons"><a href="" class="btn_main">Подробнее</a></div>
+              <!-- /.offer__buttons -->
+            </div><!-- /.offer -->
+          </div><!-- /.card -->
+        </div><!-- /.lkgrid__item -->
+
+        <div class="lkgrid__item">
+          <div class="card">
+            <div class="offer">
+              <div class="offer__header">
+                <div class="offer__title">
+                  <div class="offer__name">Тинькофф</div>
+                  <div class="offer__info">лиц. № 3292</div>
+                </div><!-- /.offer__title -->
+                <div class="offer__logo">
+                  <div class="offer__img"><img src="img/offer2.svg" alt=""></div>
+                </div>
+              </div><!-- /.offer__header -->
+              <div class="offer__main">
+                <div class="offer__params">
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">на любые цели</div>
+                    <div class="offer__paramtext2">кредит наличными</div>
+                  </div><!-- /.offer__param -->
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">до 5 000 000 ₽</div>
+                    <div class="offer__paramtext2">сумма</div>
+                  </div><!-- /.offer__param -->
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">от 5,9%</div>
+                    <div class="offer__paramtext2">ставка</div>
+                  </div><!-- /.offer__param -->
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">до 7-ми лет</div>
+                    <div class="offer__paramtext2">срок</div>
+                  </div><!-- /.offer__param -->
+
+                </div><!-- /.offer__params -->
+              </div><!-- /.offer__main -->
+              <div class="offer__buttons card__buttons"><a href="" class="btn_main">Подробнее</a></div>
+              <!-- /.offer__buttons -->
+            </div><!-- /.offer -->
+          </div><!-- /.card -->
+        </div><!-- /.lkgrid__item -->
+        <div class="lkgrid__item">
+          <div class="card">
+            <div class="offer">
+              <div class="offer__header">
+                <div class="offer__title">
+                  <div class="offer__name">Почта Банк</div>
+                  <div class="offer__info">лиц. № 3292</div>
+                </div><!-- /.offer__title -->
+                <div class="offer__logo">
+                  <div class="offer__img"><img src="img/offer3.svg" alt=""></div>
+                </div>
+              </div><!-- /.offer__header -->
+              <div class="offer__main">
+                <div class="offer__params">
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">на любые цели</div>
+                    <div class="offer__paramtext2">кредит наличными</div>
+                  </div><!-- /.offer__param -->
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">до 5 000 000 ₽</div>
+                    <div class="offer__paramtext2">сумма</div>
+                  </div><!-- /.offer__param -->
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">от 5,9%</div>
+                    <div class="offer__paramtext2">ставка</div>
+                  </div><!-- /.offer__param -->
+                  <div class="offer__param">
+                    <div class="offer__paramtext1">до 7-ми лет</div>
+                    <div class="offer__paramtext2">срок</div>
+                  </div><!-- /.offer__param -->
+                </div><!-- /.offer__params -->
+              </div><!-- /.offer__main -->
+              <div class="offer__buttons card__buttons"><a href="" class="btn_main">Подробнее</a></div>
+              <!-- /.offer__buttons -->
+            </div><!-- /.offer -->
+          </div><!-- /.card -->
+        </div><!-- /.lkgrid__item -->
+
+      </div><!-- /.lkgrid__div lkgrid__items -->
+      <div class="lkgrid__more"><a href="" class="btn_main btn_main_default btn_main_inwhite">все предложения</a></div>
+    </div><!-- /.container -->
+  </section>
+
+  <section>
+    <div class="container">
+      <h3>Подключенные услуги</h3>
+      <div class="cards">
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__left">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/serv2.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__title">Кредитная история</div>
+                  <div class="serv__info">Отчет о ваших кредитах <br> и кредитных заявках. <a href=""
+                      class="link_blue">Подробнее</a>
+                  </div><!-- /.serv__info -->
+                  <div class="serv__date">
+                    Последний запрос <a href="" class="link_blue">22.12.2020</a>
+
+                  </div><!-- /.serv__date -->
+                </div><!-- /.serv__main -->
+              </div>
+              <div class="serv__params">
+                <div class="serv__param">
+                  <div class="serv__status">
+
+                  </div>
+                  <div class="serv__actions">
+                    <div class="serv__price"></div>
+                    <div class="serv__button"><a href=""
+                        class="btn_main btn_main_default btn_main_white inactive inactive_black">Получить бесплатно</a>
+                      <!-- /.btn -->
+                    </div><!-- /.serv__button -->
+                  </div>
+                </div><!-- /.serv__param -->
+              </div><!-- /.serv__params -->
+            </div><!-- /.serv__content -->
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__left">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/serv3.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__title">ПКР 12</div>
+                  <div class="serv__info">Динамика персонального кредитного <br> рейтинга за год. <a href=""
+                      class="link_blue">Подробнее</a>
+                  </div><!-- /.serv__info -->
+                  <div class="serv__date">
+                    Последний запрос <a href="" class="link_blue">22.12.2020</a>
+
+                  </div><!-- /.serv__date -->
+                </div><!-- /.serv__main -->
+              </div>
+              <div class="serv__params">
+                <div class="serv__param">
+                  <div class="serv__status">
+
+
+                  </div>
+                  <div class="serv__actions">
+                    <div class="serv__price">699 ₽</div><!-- /.serv__price -->
+                    <div class="serv__button onlyDesktop"><a href=""
+                        class="btn_main btn_main_default btn_main_white inactive inactive_black">Купить</a>
+                      <!-- /.btn -->
+                    </div><!-- /.serv__button -->
+                    <div class="serv__button onlyMobile"><a href=""
+                        class="btn_main btn_main_default btn_main_white inactive inactive_black">Купить за 699 ₽</a>
+                      <!-- /.btn -->
+                    </div><!-- /.serv__button -->
+                  </div>
+                </div><!-- /.serv__param -->
+              </div><!-- /.serv__params -->
+            </div><!-- /.serv__content -->
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__left">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/serv4.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__title">Подписка на кредитную историю
+                  </div>
+                  <div class="serv__info">6 кредитных отчетов. <a href="" class="link_blue">Подробнее</a>
+                  </div><!-- /.serv__info -->
+                  <div class="serv__date">
+                    Последний запрос <a href="" class="link_blue">22.12.2020</a>
+
+                  </div><!-- /.serv__date -->
+                </div><!-- /.serv__main -->
+              </div>
+              <div class="serv__params">
+                <div class="serv__param">
+                  <div class="serv__status">
+                    <div class="servstatus">Подписка до 11.11.2021.</div>
+
+                  </div>
+                  <div class="serv__actions">
+                    <div class="serv__price ">950 ₽</div><!-- /.serv__price -->
+                    <div class="serv__button onlyDesktop"><a href=""
+                        class="btn_main btn_main_default btn_main_white inactive inactive_black">Продлить</a>
+                      <!-- /.btn -->
+                    </div><!-- /.serv__button -->
+
+                    <div class="serv__button onlyMobile"><a href=""
+                        class="btn_main btn_main_default btn_main_white inactive inactive_black">Продлить за 950 ₽</a>
+                      <!-- /.btn -->
+                    </div><!-- /.serv__button -->
+                  </div>
+                </div><!-- /.serv__param -->
+              </div><!-- /.serv__params -->
+            </div><!-- /.serv__content -->
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__left">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/serv1.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__title">Защита от мошенничества</div>
+                  <div class="serv__info">Годовая подписка. <a href="" class="link_blue">Подробнее</a>
+                  </div><!-- /.serv__info -->
+                  <div class="serv__date">
+                    Последний запрос <a href="" class="link_blue">22.12.2020</a>
+
+                  </div><!-- /.serv__date -->
+                </div><!-- /.serv__main -->
+              </div>
+              <div class="serv__params">
+                <div class="serv__param">
+                  <div class="serv__status">
+                    <div class="servstatus">Подписка до <span class="red">11.11.2021.</span></div>
+                    <div class="servstatus">
+                      <span class="red">Подписка скоро закончится</span>
+                    </div>
+                  </div>
+                  <div class="serv__actions">
+                    <div class="serv__price ">750 ₽</div><!-- /.serv__price -->
+                    <div class="serv__button onlyDesktop"><a href=""
+                        class="btn_main btn_main_default btn_main_white inactive inactive_black">Продлить</a>
+                      <!-- /.btn -->
+                    </div><!-- /.serv__button -->
+
+                    <div class="serv__button onlyMobile"><a href=""
+                        class="btn_main btn_main_default btn_main_white inactive inactive_black">Продлить за 750 ₽</a>
+                      <!-- /.btn -->
+                    </div><!-- /.serv__button -->
+                  </div>
+                </div><!-- /.serv__param -->
+              </div><!-- /.serv__params -->
+            </div><!-- /.serv__content -->
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+        <div class="card">
+          <div class="serv">
+            <div class="serv__content">
+              <div class="serv__left">
+                <div class="serv__image">
+                  <div class="serv__img"><img src="img/serv5.svg" alt=""></div>
+                </div>
+                <div class="serv__main">
+                  <div class="serv__title">Изменения в кредитной истории</div>
+                  <div class="serv__info">Годовая подписка. <a href="" class="link_blue">Подробнее</a>
+                  </div><!-- /.serv__info -->
+                  <div class="serv__date">
+                    Последний запрос <a href="" class="link_blue">22.12.2020</a>
+
+                  </div><!-- /.serv__date -->
+                </div><!-- /.serv__main -->
+              </div>
+              <div class="serv__params">
+                <div class="serv__param">
+                  <div class="serv__status">
+                    <div class="servstatus">Подписка до 11.11.2021.</div>
+
+                  </div>
+                  <div class="serv__actions">
+                    <div class="serv__price"></div><!-- /.serv__price -->
+                    <div class="serv__button"><a href=""
+                        class="btn_main btn_main_default btn_main_white inactive inactive_black">Продлить бесплатно</a>
+                      <!-- /.btn -->
+                    </div><!-- /.serv__button -->
+                  </div>
+                </div><!-- /.serv__param -->
+              </div><!-- /.serv__params -->
+            </div><!-- /.serv__content -->
+          </div><!-- /.serv -->
+        </div><!-- /.card -->
+
+
+      </div><!-- /.cards -->
+      <div class="lkgrid__more onlyDesktop"><a href="" class="btn_main btn_main_default btn_main_inwhite">Все услуги</a>
+      </div>
+    </div><!-- /.container -->
+  </section>
+
+  <section class="onlyMobile">
+    <div class="container">
+      <div class="lktextBottom">
+        <div class="lktextBottom__text">
+          <p>
+            Персональный кредитный рейтинг рассчитывается автоматически на основании информации из вашей кредитной
+            истории. Ихсодя из кредитной практики, чем выше числовое значение (количество баллов) ПКР заемщика, тем ниже
+            уровень кредитного риска.
+          </p>
+          <p>
+            ПКР носит информационный характер и не является гарантией одобрения кредита, так как решение о выдаче
+            кредита
+            и о его условиях принимает кредитная организация
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

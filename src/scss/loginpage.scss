@@ -1,0 +1,420 @@
+.loginpage {
+  background: $bglight;
+  padding: 40px 0;
+  min-height: calc(100vh - 230px);
+
+  .container {
+    @include small-screen {
+      padding: 0;
+    }
+  }
+
+  .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    /* #7B7794 */
+
+    color: #7B7794;
+    padding: 24px 0;
+
+    @include small-screen {
+      padding: 0 0 24px 0;
+      background-color: #fff;
+      margin-bottom: 32px;
+      margin-bottom: 0;
+
+      a {}
+    }
+  }
+
+  @include small-screen {
+    min-height: initial;
+    padding: 0;
+  }
+
+  .centerlogo {
+    text-align: center;
+    padding: 40px 0;
+
+    img {
+      @include small-screen {
+        width: 78px;
+
+      }
+    }
+
+  }
+}
+
+.lkform {
+  width: 368px;
+  max-width: 100%;
+  padding: 42px 38px;
+  background: #FFFFFF;
+  border: 2px solid #E0E3F0;
+  border-radius: 5px;
+  margin: auto;
+
+  @include small-screen {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+.lkform .btn_main {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.loginpage__content {
+  padding: 90px 0;
+
+  @include small-screen {
+    padding: 0;
+  }
+}
+
+.check-block p {
+  font-size: 10px;
+  line-height: 12px;
+  color: #7B7794;
+
+}
+
+.lkform__title {
+  margin-bottom: 36px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+
+  @include small-screen {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+.lkform__input {
+  margin-bottom: 26px;
+  position: relative;
+
+  @include small-screen {
+    margin-bottom: 16px;
+  }
+
+}
+
+.link_blue {
+  @include small-screen {
+    text-decoration: none;
+  }
+
+}
+
+.forminput {
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.lkform__link {
+  margin-bottom: 32px;
+
+
+  @include small-screen {
+    text-align: center;
+  }
+}
+
+
+.lkform__check {
+  margin-bottom: 62px;
+
+  @include small-screen {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+
+
+
+
+
+.lkapp {
+  border: 1px solid #AEB5D1;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 33px 33px 83px 33px;
+  width: 256px;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 32px);
+  text-align: left;
+  right: unset;
+
+  @include medium-screen {
+    position: initial;
+    width: 368px;
+    padding-bottom: 33px;
+  }
+
+  @include small-screen {
+    position: initial;
+    margin: 0 16px 32px 16px;
+    padding: 33px 33px 43px 33px;
+    width: calc(100% - 32px);
+  }
+}
+
+.lkapp__code {
+  margin-bottom: 27px;
+}
+
+.lkapp__title {
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.lkapp__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+}
+
+.loginpage__content {
+  position: relative;
+}
+
+.lkcols {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  max-width: 100%;
+
+  @include small-screen {
+    width: 100%;
+  }
+}
+
+.lkform__label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+
+  /* Красный */
+
+
+  padding: 5px;
+  background: #fff;
+  position: absolute;
+  top: -11px;
+  left: 17px;
+}
+
+.lkform__label_error {
+  color: #FF0029;
+}
+
+@include small-screen {
+  .appslinks {
+
+    margin-bottom: 34px;
+  }
+}
+
+.appslinks__item {
+  width: 100px;
+  display: inline-block;
+}
+
+
+.lksteps {
+  width: 100%;
+  margin: auto;
+  position: inherit;
+  position: absolute;
+  top: -87px;
+  left: 0;
+  right: 0;
+
+  @include small-screen {
+    position: initial;
+    margin-bottom: 32px;
+
+  }
+
+}
+
+.lksteps__items {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  width: calc(100% + 30px);
+  margin: 0 -15px;
+  padding: 0 15px;
+}
+
+.lksteps__step {
+  position: relative;
+  text-align: center;
+
+  @include small-screen {
+    width: 32%;
+
+  }
+
+}
+
+.lksteps__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 12px;
+  margin-left: -10px;
+  /* #7B7794 */
+
+  color: #7B7794;
+
+  @include small-screen {
+    display: none;
+
+  }
+}
+
+.lksteps__point {
+  background: #ECEEF6;
+  border: 3px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 120px;
+  width: 16px;
+  height: 16px;
+
+  @include small-screen {
+    width: 100%;
+    height: 4px;
+    background: #ECEEF6;
+    border-radius: 0;
+    border: none;
+  }
+}
+
+.lksteps__step.active .lksteps__point {
+  width: 16px;
+  height: 16px;
+  border: 3px solid #4563FF;
+  background: #4563FF;
+  border-radius: 120px;
+
+  @include small-screen {
+    width: 100%;
+    height: 4px;
+    border-radius: 0;
+    border: none;
+  }
+}
+
+.lksteps__progress {
+  position: absolute;
+  top: 36px;
+  width: 99%;
+  left: 0;
+  right: 0;
+
+  @include small-screen {
+    display: none;
+  }
+}
+
+.progressbar {
+  background-color: #fff;
+
+  height: 3px;
+}
+
+.progressbar>div {
+  background-color: #4563FF;
+
+  /* Adjust with JavaScript */
+  height: 3px;
+}
+
+.lksteps__items .lksteps__step:last-child .lksteps__point {
+  float: right;
+}
+
+.btn_main:disabled {
+  border: 1px solid #7b7794;
+  cursor: not-allowed;
+}
+
+
+
+.lksteps__items .lksteps__step:last-child .lksteps__title {
+  margin-left: 0;
+  margin-right: -15px;
+}
+
+.lkform__message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* #7B7794 */
+  margin-bottom: 15px;
+  color: #7B7794;
+
+  @include small-screen {
+    text-align: center;
+  }
+}
+
+.lkform__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+
+  /* #7B7794 */
+
+  color: #7B7794;
+  margin-bottom: 29px;
+
+  @include small-screen {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+}
+
+.lkform__input:last-of-type {
+  margin-bottom: 48px;
+
+  @include small-screen {
+    margin-bottom: 26px;
+  }
+}

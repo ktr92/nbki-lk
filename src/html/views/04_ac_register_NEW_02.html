@@ -1,0 +1,98 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<div class="loginpage">
+  <div class="container">
+    <div class="centerlogo"><a href=""><img src="images/centerlogo.svg" alt=""></a></div>
+
+    <div class="loginpage__content">
+
+
+
+      <div class="lkcols">
+
+
+
+        <div class="lkform">
+          <form action="">
+            <div class="lkform__title">Подтверждение профиля</div>
+
+            <div class="lksteps">
+              <div class="lksteps__progress">
+                <div class="progressbar">
+                  <div style="width: 50%;"></div>
+                </div>
+              </div>
+              <div class="lksteps__items">
+                <div class="lksteps__step active">
+                  <div class="lksteps__title">Шаг 1</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+
+                <div class="lksteps__step active">
+                  <div class="lksteps__title">Шаг 2</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+                <div class="lksteps__step">
+                  <div class="lksteps__title">Шаг 3</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+
+              </div><!-- /.lksteps__items -->
+            </div><!-- /.lksteps -->
+
+
+            <div class="lkform__input">
+              <input type="text" class="forminput " placeholder="Фамилия">
+              <span class="lkform__label">Фамилия</span>
+
+            </div>
+
+            <div class="lkform__input">
+              <input type="text" class="forminput " placeholder="Имя">
+              <span class="lkform__label">Имя</span>
+            </div>
+
+            <div class="lkform__input">
+              <input type="text" class="forminput " placeholder="Отчество">
+              <span class="lkform__label">Отчество</span>
+            </div>
+
+            <div class="lkform__input">
+              <input type="text" class="forminput forminput_date" placeholder="Дата рождения">
+              <span class="lkform__label">Дата рождения</span>
+            </div>
+
+            <div class="lkform__input">
+              <input type="text" class="forminput forminput_passport" placeholder="Серия и номер паспорта">
+              <span class="lkform__label">Серия и номер паспорта</span>
+            </div>
+
+            <button class="btn_main btn_main_default btn_main_icon">
+              <img src="img/gos.svg" alt="">
+              <span>Подтвердить</span>
+            </button>
+            <a href="" class="btn_main btn_main_default btn_main_white">Пропустить</a>
+
+
+
+          </form>
+        </div><!-- /.lkform -->
+        <div class="text">Уже зарегистрированы? <a href="" class="link_blue">Войти</a></div>
+
+      </div><!-- /.lkcols -->
+
+    </div><!-- /.loginpage__content -->
+  </div><!-- /.container -->
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

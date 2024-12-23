@@ -1,0 +1,91 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<div class="loginpage">
+  <div class="container">
+    <div class="centerlogo"><a href=""><img src="images/centerlogo.svg" alt=""></a></div>
+
+    <div class="loginpage__content">
+
+
+
+      <div class="lkcols">
+
+
+        <div class="lkform">
+          <form action="">
+            <div class="lkform__title">Регистрация</div>
+
+            <div class="lksteps">
+              <div class="lksteps__progress">
+                <div class="progressbar">
+                  <div style="width: 0%;"></div>
+                </div>
+              </div>
+              <div class="lksteps__items">
+                <div class="lksteps__step active">
+                  <div class="lksteps__title">Шаг 1</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+
+                <div class="lksteps__step">
+                  <div class="lksteps__title">Шаг 2</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+                <div class="lksteps__step">
+                  <div class="lksteps__title">Шаг 3</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+
+              </div><!-- /.lksteps__items -->
+            </div><!-- /.lksteps -->
+
+
+
+            <div class="lkform__input">
+              <input type="text" class="forminput " placeholder="Электронная почта">
+              <span class="lkform__label">Электронная почта</span>
+
+            </div>
+            <div class="lkform__input">
+              <input type="password" class="forminput " placeholder="Пароль">
+              <span class="lkform__label">Пароль</span>
+
+            </div>
+            <div class="lkform__input">
+              <input type="password" class="forminput " placeholder="Повторите пароль">
+              <span class="lkform__label">Повторите пароль</span>
+
+            </div>
+
+
+            <div class="lkform__check check-block">
+              <input type="checkbox" id="checkbox_confirm">
+              <label for="checkbox_confirm"> Нажимая «Войти» я подтверждаю ознакомление с <a href=""
+                  class="link_blue">Правилами использования
+                  Личного
+                  кабинета</a> и даю свое <a href="" class="link_blue">Согласие на обработку персональных данных</a>
+              </label>
+            </div>
+            <button class="btn_main btn_main_default js-next" disabled>Далее</button>
+
+          </form>
+        </div><!-- /.lkform -->
+        <div class="text">Уже зарегистрированы? <a href="" class="link_blue">Войти</a></div>
+
+      </div><!-- /.lkcols -->
+
+    </div><!-- /.loginpage__content -->
+  </div><!-- /.container -->
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

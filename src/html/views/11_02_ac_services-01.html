@@ -1,0 +1,195 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<main>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul>
+        <li><a href=""><span>Главная</span></a></li>
+        <li><a href=""><span>Личный кабинет</span></a></li>
+        <li><span>Услуги</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navpages">
+      <ul class="navpages__list">
+        <li><a href="#">Обзор</a></li>
+        <li class="active"><a href="#">Все услуги</a></li>
+        <li><a href="#">Мой профиль</a></li>
+        <li><a href="#">История заказов</a></li>
+        <li><a href="#">Кредитные предложения</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="container">
+
+      <div class="infoToppage onlyMobile">
+        <p>Для получения услуги подтвердите свои данные в разделе <a href="" class="link_blue">Мой
+            профиль</a> </p>
+      </div><!-- /.onlyMobile -->
+
+      <div class="lkgrid">
+        <div class="lkgrid__items">
+          <div class="lkgrid__item">
+            <div class="card">
+              <div class="lkservice">
+                <div class="lkservice__content">
+                  <div class="lkservice__header">
+                    <div class="lkservice__name lkservice__name_small">Кредитная <br> история</div>
+                    <div class="lkservice__image"><img src="img/lkservice1.svg" alt=""></div>
+                  </div><!-- /.lkservice__header -->
+                  <div class="lkservice__main">
+                    <div class="lkservice__text">Отчет о ваших кредитах <br> и кредитных заявках</div>
+                  </div><!-- /.lkservice__main -->
+                  <div class="lkservice__button"><a href=""
+                      class="btn_main btn_main_default btn_main_white inactive">Получить
+                      бесплатно</a></div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item">
+            <div class="card">
+              <div class="lkservice">
+                <div class="lkservice__content">
+                  <div class="lkservice__header">
+                    <div class="lkservice__name ">ПКР</div>
+                    <div class="lkservice__image"><img src="img/lkservice2.svg" alt=""></div>
+                  </div><!-- /.lkservice__header -->
+                  <div class="lkservice__main">
+                    <div class="lkservice__text">Общая оценка вашей кредитной истории</div>
+                  </div><!-- /.lkservice__main -->
+                  <div class="lkservice__button">
+                    <div class="tooltip tooltip_top visible ">
+                      <span class="tooltiptext">
+                        <p>Для получения услуги подтвердите свои данные в разделе <a href="" class="link_blue">Мой
+                            профиль</a> </p>
+                      </span>
+                    </div>
+                    <a href="" class="btn_main btn_main_default btn_main_white inactive" disabled>Получить
+                      бесплатно</a>
+                  </div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item">
+            <div class="card">
+              <div class="lkservice">
+                <div class="lkservice__content">
+                  <div class="lkservice__header">
+                    <div class="lkservice__name ">ПКР 12</div>
+                    <div class="lkservice__image"><img src="img/lkservice3.svg" alt=""></div>
+                  </div><!-- /.lkservice__header -->
+                  <div class="lkservice__main">
+                    <div class="lkservice__text">Динамика персонального кредитного рейтинга за год</div>
+                  </div><!-- /.lkservice__main -->
+                  <div class="lkservice__button">
+
+                    <a href="" class="btn_main btn_main_default btn_main_white inactive">450 ₽ </a>
+                  </div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item">
+            <div class="card">
+              <div class="lkservice">
+                <div class="lkservice__content">
+                  <div class="lkservice__header">
+                    <div class="lkservice__name lkservice__name_small">Подписка на <br> кредитную историю</div>
+                    <div class="lkservice__image"><img src="img/lkservice4.svg" alt=""></div>
+                  </div><!-- /.lkservice__header -->
+                  <div class="lkservice__main">
+                    <div class="lkservice__text">Еще 6 кредитных отчетов, помимо бесплатных, для контроля своей
+                      финансовой
+                      репутации</div>
+                  </div><!-- /.lkservice__main -->
+                  <div class="lkservice__button">
+                    <div class="tooltip tooltip_top visible ">
+                      <span class="tooltiptext">
+                        <p>Для получения услуги подтвердите свои данные в разделе <a href="" class="link_blue">Мой
+                            профиль</a> </p>
+                      </span>
+                    </div>
+                    <a href="" class="btn_main btn_main_default btn_main_white inactive" disabled>950 ₽ </a>
+                  </div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item">
+            <div class="card">
+              <div class="lkservice">
+                <div class="lkservice__content">
+                  <div class="lkservice__header">
+                    <div class="lkservice__name lkservice__name_small">Защита <br> от мошенничества</div>
+                    <div class="lkservice__image"><img src="img/lkservice5.svg" alt=""></div>
+                  </div><!-- /.lkservice__header -->
+                  <div class="lkservice__main">
+                    <div class="lkservice__text">Годовая подписка на уведомления о подозрительных изменениях в
+                      кредитной
+                      истории </div>
+                  </div><!-- /.lkservice__main -->
+                  <div class="lkservice__button">
+                    <div class="tooltip tooltip_top visible ">
+                      <span class="tooltiptext">
+                        <p>Для получения услуги подтвердите свои данные в разделе <a href="" class="link_blue">Мой
+                            профиль</a> </p>
+                      </span>
+                    </div>
+                    <a href="" class="btn_main btn_main_default btn_main_white inactive" disabled>750 ₽ </a>
+                  </div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+          <div class="lkgrid__item">
+            <div class="card">
+              <div class="lkservice">
+                <div class="lkservice__content">
+                  <div class="lkservice__header">
+                    <div class="lkservice__name lkservice__name_small">Изменения <br> в кредитной истории</div>
+                    <div class="lkservice__image"><img src="img/lkservice6.svg" alt=""></div>
+                  </div><!-- /.lkservice__header -->
+                  <div class="lkservice__main">
+                    <div class="lkservice__text">Годовая подписка на уведомления обо всех значимых изменениях в
+                      кредитной
+                      истории</div>
+                  </div><!-- /.lkservice__main -->
+                  <div class="lkservice__button">
+                    <div class="tooltip tooltip_top visible ">
+                      <span class="tooltiptext">
+                        <p>Для получения услуги подтвердите свои данные в разделе <a href="" class="link_blue">Мой
+                            профиль</a> </p>
+                      </span>
+                    </div>
+                    <a href="" class="btn_main btn_main_default btn_main_white inactive" disabled>Оформить бесплатно</a>
+                  </div>
+                </div><!-- /.lkservice__content -->
+              </div><!-- /.lkservice -->
+            </div><!-- /.card -->
+          </div><!-- /.lkgrid__item -->
+
+
+        </div><!-- /.lkgrid__items -->
+      </div><!-- /.lkgrid -->
+    </div><!-- /.container -->
+  </section>
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

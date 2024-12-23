@@ -1,0 +1,74 @@
+<% var data = {
+  title: "Заголовок | Проект",
+  author: ""
+}; %>
+<%= _.template(require('./../includes/head.html').default)(data) %>
+
+<div class="loginpage">
+  <div class="container">
+    <div class="centerlogo"><a href=""><img src="images/centerlogo.svg" alt=""></a></div>
+
+    <div class="loginpage__content">
+
+
+
+      <div class="lkcols">
+
+
+
+        <div class="lkform">
+          <form action="">
+            <div class="lkform__title">Подтверждение регистрации</div>
+
+            <div class="lksteps">
+              <div class="lksteps__progress">
+                <div class="progressbar">
+                  <div style="width: 100%;"></div>
+                </div>
+              </div>
+              <div class="lksteps__items">
+                <div class="lksteps__step active">
+                  <div class="lksteps__title">Шаг 1</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+
+                <div class="lksteps__step active">
+                  <div class="lksteps__title">Шаг 2</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+                <div class="lksteps__step active">
+                  <div class="lksteps__title ">Шаг 3</div>
+                  <div class="lksteps__point">
+                    <span></span>
+                  </div>
+                </div><!-- /.lksteps__step -->
+
+              </div><!-- /.lksteps__items -->
+            </div><!-- /.lksteps -->
+
+
+            <div class="lkform__message">
+              На электронный адрес <a href="" class="link_blue">test@test.ru</a> будет направлена ссылка для активации
+              личного кабинета</div>
+            <div class="lkform__message">
+              <a href="" class="link_blue">Отправить письмо повторно </a></div>
+
+
+
+
+
+          </form>
+        </div><!-- /.lkform -->
+
+
+      </div><!-- /.lkcols -->
+
+    </div><!-- /.loginpage__content -->
+  </div><!-- /.container -->
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
